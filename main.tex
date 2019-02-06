@@ -16,7 +16,7 @@
 \maketitle
 
 \begin{abstract}
-Enter a short summary here. What topic do you want to investigate and why? What experiment did you perform? What were your main results and conclusion?
+% Enter a short summary here. What topic do you want to investigate and why? What experiment did you perform? What were your main results and conclusion?
 \end{abstract}
 
 \section{Introduction 5 lines to max 1/2 page}
@@ -32,20 +32,36 @@ For this section and all following sections: If you refer to an equation, previo
 \section{Theory 2-3 pages}
 \label{sec:theory}
 
-\subsection{Two-dimensional Electron Gas}
-Here, explain the concept of a 2-DEG in GaAs/AlGaAs. What is a 2-DEG and why does it arise?
+%\subsection{Two-dimensional Electron Gas}
+%Here, explain the concept of a 2-DEG in GaAs/AlGaAs. What is a 2-DEG and why does it arise?
 
-\subsection{Hall Effect}
-Explain the classical Hall effect in your own words. What do I measure at $B=0$? And what happens if $B>0$? Which effect gives rise to the voltage drop in the vertical direction?
+%\subsection{Hall Effect}
+%Explain the classical Hall effect in your own words. What do I measure at $B=0$? And what happens if $B>0$? Which effect gives rise to the voltage drop in the vertical direction?
 
-\subsection{Quantum Hall Effect}
-Explain the IQHE in your own words. What does the density of states look like in a 2-DEG when $B=0$? What are Landau levels and how do they arise? What are edge states? What does the electron transport look like when you change the magnetic field? What do you expect to measure?
+%\subsection{Quantum Hall Effect}
+%Explain the IQHE in your own words. What does the density of states look like in a 2-DEG when $B=0$? What are Landau levels and how do they arise? What are edge states? What does the electron transport look like when you change the magnetic field? What do you expect to measure?
 
 \section{Experiment 1-2 pages}
+\begin{itemize}
+\item Purpose: running time comparison between AMCMC and MCINTYRE algorithms on 
+      equivalent problems.
+\item Experiments: every experiment is repeated on a different processor 
+      thread. The results of these experiments are grouped by sample size so 
+      it is possible to compute the average running times and standard 
+      deviations.
+\end{itemize}
+
 \subsection{Fabrication}
-Explain a step-by-step recipe for fabrication here. How long did you etch and why? What is an Ohmic contact?
+%Explain a step-by-step recipe for fabrication here. How long did you etch and why? What is an Ohmic contact?
+\begin{itemize}
+\item Once the data is saved on a CSV file the statistical computations and 
+      plotting is respectively done by Numpy and Matplotlib.
+\end{itemize}
+
 \subsection{Experimental set-up}
-Explain the experimental set-up here. Use a schematic picture (make it yourself in photoshop, paint, ...) to show how the components are connected. Briefly explain how a lock-in amplifier works.
+% Explain the experimental set-up here. Use a schematic picture (make it yourself in photoshop, paint, ...) to show how the components are connected. Briefly explain how a lock-in amplifier works.
+
+
 
 \section{Results and interpretation 2-3 pages}
 Show a graph of the longitudinal resistivity ($\rho_{xx}$) and Hall resistivity ($\rho_{xy}$) versus magnetic field, extracted from the raw data shown in figure \ref{fig:data}. You will have the link to the data in your absalon messages, if not e-mail Guen (guen@nbi.dk). Explain how you calculated these values, and refer to the theory.
