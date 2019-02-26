@@ -76,7 +76,9 @@ This experiments uses a lot of memory.
 
 ![plot_test33_sample_mh_vs_gibbs_times.png](plot_test33_sample_mh_vs_gibbs_times.png)
 
-### test33_adapt_on_vs_adapt_off
+### test33_adapt_on_vs_adapt_off single switch
+
+TODO: RE-RUN THIS
 
 ![plot_test33_cond_prob_adapt_on_vs_adapt_off_times.png](plot_test33_cond_prob_adapt_on_vs_adapt_off_times.png)
 
@@ -88,7 +90,9 @@ As you can see from this plot the AMCMC implementation, even without
 adaptation, is much faster than the one XSB Prolog for ?several orders? of 
 magnitude.
 
-### TODO: add test33 --multi-switch
+### test33_adapt_on_vs_adapt_off multi switch
+
+TODO
 
 ## Conclusions
 
