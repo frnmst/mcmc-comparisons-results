@@ -12,6 +12,11 @@
         - [Hardware](#hardware)
         - [Software](#software)
     - [Results](#results)
+        - [arithm_sample](#arithm_sample)
+        - [test33_sample](#test33_sample)
+        - [test33_adapt_on_vs_adapt_off](#test33_adapt_on_vs_adapt_off)
+        - [test33 four way comparison](#test33-four-way-comparison)
+        - [TODO: add test33 --multi-switch](#todo-add-test33---multi-switch)
 
 [](TOC)
 
@@ -59,9 +64,21 @@ by NumPy, both of which are Python libraries.
 
 ## Results
 
+For each plot the standard deviation is represented by error bars.
+
 ### arithm_sample
 
 ![plot_arithm_sample_mh_vs_gibbs_probs.png](plot_arithm_sample_mh_vs_gibbs_times.png)
+
+This experiments uses a lot of memory.
+
+### test33_sample
+
+![plot_test33_sample_mh_vs_gibbs_times.png](plot_test33_sample_mh_vs_gibbs_times.png)
+
+### test33_adapt_on_vs_adapt_off
+
+![plot_test33_cond_prob_adapt_on_vs_adapt_off_times.png](plot_test33_cond_prob_adapt_on_vs_adapt_off_times.png)
 
 ### test33 four way comparison
 
@@ -71,4 +88,8 @@ As you can see from this plot the AMCMC implementation, even without
 adaptation, is much faster than the one XSB Prolog for ?several orders? of 
 magnitude.
 
-### TODO: add --multi-switch
+### TODO: add test33 --multi-switch
+
+## Conclusions
+
+TODO
