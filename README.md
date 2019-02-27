@@ -77,13 +77,13 @@ For each plot the standard deviation is represented by error bars.
 
 This experiments uses a lot of memory.
 
-    $ ./run.sh --test-type=swi --parallel -max=500000 --test-name=arithm_sample
+    $ ./run.sh --test-type=swi --parallel --max=500000 --test-name=arithm_sample
 
 ### test33_sample
 
 ![plot_test33_sample_mh_vs_gibbs_times.png](plot_test33_sample_mh_vs_gibbs_times.png)
 
-    $ ./run.sh --test-type=swi --parallel -max=500000 --test-name=test33_sample
+    $ ./run.sh --test-type=swi --parallel --max=500000 --test-name=test33_sample
 
 ### test33_adapt_on_vs_adapt_off single switch
 
@@ -91,7 +91,7 @@ TODO: RE-RUN THIS
 
 ![plot_test33_cond_prob_adapt_on_vs_adapt_off_times.png](plot_test33_cond_prob_adapt_on_vs_adapt_off_times.png)
 
-    $ ./run.sh --test-type=xsb --parallel -max=500000 --test-name=test33_cond_prob
+    $ ./run.sh --test-type=xsb --parallel --max=500000 --test-name=test33_cond_prob
 
 ### test33 four way comparison
 
@@ -101,7 +101,7 @@ As you can see from this plot the AMCMC implementation, even without
 adaptation, is much faster than the one XSB Prolog for ?several orders? of 
 magnitude.
 
-    $ ./run.sh --four-way-comparison --parallel -max=500000 --test-name='test33_sample:test33_cond_prob'
+    $ ./run.sh --four-way-comparison --parallel --max=500000 --test-name='test33_sample:test33_cond_prob'
 
 What the previous command does it to execute the single tests separately.
 
@@ -109,7 +109,7 @@ What the previous command does it to execute the single tests separately.
 
 TODO
 
-    $ ./run.sh --multi-switch --parallel -max=500000 --test-name=test33_cond_prob
+    $ ./run.sh --multi-switch --parallel --max=500000 --test-name=test33_cond_prob
 
 ## Conclusions
 
