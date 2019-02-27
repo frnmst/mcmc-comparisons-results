@@ -93,6 +93,12 @@ TODO: RE-RUN THIS
 
     $ ./run.sh --test-type=xsb --parallel --max=500000 --test-name=test33_cond_prob
 
+### test33_adapt_on_vs_adapt_off multi switch
+
+TODO
+
+    $ ./run.sh --test-type=xsb --multi-switch --parallel --max=500000 --test-name=test33_cond_prob
+
 ### test33 four way comparison
 
 ![plot_test33_times.png](plot_test33_times.png)
@@ -104,12 +110,6 @@ magnitude.
     $ ./run.sh --four-way-comparison --parallel --max=500000 --test-name='test33_sample:test33_cond_prob'
 
 What the previous command does it to execute the single tests separately.
-
-### test33_adapt_on_vs_adapt_off multi switch
-
-TODO
-
-    $ ./run.sh --multi-switch --parallel --max=500000 --test-name=test33_cond_prob
 
 ## Conclusions
 
