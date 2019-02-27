@@ -48,10 +48,10 @@ assigned and a total memory of 7 Gigabytes, 1 of which as swap. For one
 particular experiment a physical computer with 12 Gigabytes of memory was used 
 due to the memory *restraints* of the virtual machine.
 
-| Processor cores | Threads per core | Memory (GB) | Swap (GB) | Virtual machine |
-|-----------------|------------------|-------------|-----------|-----------------|
-| 4               | 1                | 6           | 1         | x               |
-| 2               | 2                | 12          | 0 (FIXE:check this) | |
+| Computer id | Processor cores | Threads per core | Memory (GB) | Swap (GB) | Virtual machine |
+|-------------|-----------------|------------------|-------------|-----------|-----------------|
+| 0 | 4 | 1 | 6  | 1 | x |
+| 1 | 2 | 2 | 12 | 0 (FIXE:check this) | |
 
 ### Software
 
