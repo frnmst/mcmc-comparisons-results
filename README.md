@@ -50,8 +50,8 @@ due to the memory *restraints* of the virtual machine.
 
 | Computer id | Processor cores | Threads per core | Memory (GB) | Swap (GB) | Virtual machine |
 |-------------|-----------------|------------------|-------------|-----------|-----------------|
-| 0 | 4 | 1 | 6  | 1 | x |
-| 1 | 2 | 2 | 12 | 0 (FIXE:check this) | |
+| 0 | 4 | 1 | 6  | 1 | yes |
+| 1 | 2 | 2 | 12 | 0 (FIXME:check this) | no |
 
 ### Software
 
