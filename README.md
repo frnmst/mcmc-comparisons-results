@@ -5,18 +5,19 @@
 [](TOC)
 
 - [A Comparison between AMCMC and MCINTYRE](#a-comparison-between-amcmc-and-mcintyre)
-    - [Table of contents](#table-of-contents)
-    - [Abstract](#abstract)
-    - [Introduction](#introduction)
-    - [Materials and methods](#materials-and-methods)
-        - [Hardware](#hardware)
-        - [Software](#software)
-    - [Results](#results)
-        - [arithm_sample](#arithm_sample)
-        - [test33_sample](#test33_sample)
-        - [test33_adapt_on_vs_adapt_off](#test33_adapt_on_vs_adapt_off)
-        - [test33 four way comparison](#test33-four-way-comparison)
-        - [TODO: add test33 --multi-switch](#todo-add-test33---multi-switch)
+  - [Table of contents](#table-of-contents)
+  - [Abstract](#abstract)
+  - [Introduction](#introduction)
+  - [Materials and methods](#materials-and-methods)
+    - [Hardware](#hardware)
+    - [Software](#software)
+  - [Results](#results)
+    - [arithm_sample (cplint)](#arithm_sample-cplint)
+    - [test33_sample (cplint)](#test33_sample-cplint)
+    - [test33_adapt_on_vs_adapt_off single switch (amcmc)](#test33_adapt_on_vs_adapt_off-single-switch-amcmc)
+    - [test33_adapt_on_vs_adapt_off multi switch (amcmc)](#test33_adapt_on_vs_adapt_off-multi-switch-amcmc)
+    - [test33 four way comparison (cplint and amcmc)](#test33-four-way-comparison-cplint-and-amcmc)
+  - [Conclusions](#conclusions)
 
 [](TOC)
 
@@ -71,7 +72,7 @@ by NumPy, both of which are Python libraries.
 
 For each plot the standard deviation is represented by error bars.
 
-### arithm_sample
+### arithm_sample (cplint)
 
 ![plot_arithm_sample_mh_vs_gibbs_probs.png](plot_arithm_sample_mh_vs_gibbs_times.png)
 
@@ -79,13 +80,13 @@ This experiments uses a lot of memory.
 
     $ ./run.sh --test-type=swi --parallel --max=500000 --test-name=arithm_sample
 
-### test33_sample
+### test33_sample (cplint)
 
 ![plot_test33_sample_mh_vs_gibbs_times.png](plot_test33_sample_mh_vs_gibbs_times.png)
 
     $ ./run.sh --test-type=swi --parallel --max=500000 --test-name=test33_sample
 
-### test33_adapt_on_vs_adapt_off single switch
+### test33_adapt_on_vs_adapt_off single switch (amcmc)
 
 TODO: RE-RUN THIS
 
@@ -93,13 +94,13 @@ TODO: RE-RUN THIS
 
     $ ./run.sh --test-type=xsb --parallel --max=500000 --test-name=test33_cond_prob
 
-### test33_adapt_on_vs_adapt_off multi switch
+### test33_adapt_on_vs_adapt_off multi switch (amcmc)
 
 TODO
 
     $ ./run.sh --test-type=xsb --multi-switch --parallel --max=500000 --test-name=test33_cond_prob
 
-### test33 four way comparison
+### test33 four way comparison (cplint and amcmc)
 
 ![plot_test33_times.png](plot_test33_times.png)
 
