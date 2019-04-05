@@ -15,7 +15,7 @@
     - [arithm_sample (cplint)](#arithm_sample-cplint)
     - [test33_sample (cplint)](#test33_sample-cplint)
     - [test33_adapt_on_vs_adapt_off single switch (amcmc)](#test33_adapt_on_vs_adapt_off-single-switch-amcmc)
-    - [test33_adapt_on_vs_adapt_off multi switch (amcmc)](#test33_adapt_on_vs_adapt_off-multi-switch-amcmc)
+    - [test33_adapt_on_vs_adapt_off multi switch with resampling probability=0.5 (amcmc)](#test33_adapt_on_vs_adapt_off-multi-switch-with-resampling-probability05-amcmc)
     - [test33 four way comparison (cplint and amcmc)](#test33-four-way-comparison-cplint-and-amcmc)
   - [Conclusions](#conclusions)
 
