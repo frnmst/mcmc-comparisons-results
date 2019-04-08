@@ -14,8 +14,12 @@
   - [Results](#results)
     - [arithm_sample (cplint)](#arithm_sample-cplint)
     - [test33_sample (cplint)](#test33_sample-cplint)
-    - [test33_adapt_on_vs_adapt_off single switch (amcmc)](#test33_adapt_on_vs_adapt_off-single-switch-amcmc)
-    - [test33_adapt_on_vs_adapt_off multi switch with resampling probability=0.5 (amcmc)](#test33_adapt_on_vs_adapt_off-multi-switch-with-resampling-probability05-amcmc)
+    - [test33_adapt_on_vs_adapt_off (amcmc)](#test33_adapt_on_vs_adapt_off-amcmc)
+      - [single switch](#single-switch)
+      - [single switch (1e6 samples)](#single-switch-1e6-samples)
+      - [multi switch with resampling probability=0.0 (amcmc)](#multi-switch-with-resampling-probability00-amcmc)
+      - [multi switch with resampling probability=0.5 (amcmc)](#multi-switch-with-resampling-probability05-amcmc)
+      - [multi switch with resampling probability=1.0 (amcmc)](#multi-switch-with-resampling-probability10-amcmc)
     - [test33 four way comparison (cplint and amcmc)](#test33-four-way-comparison-cplint-and-amcmc)
   - [Conclusions](#conclusions)
 
@@ -93,6 +97,12 @@ This experiments uses a lot of memory.
 ![plot_test33_cond_prob_adapt_on_vs_adapt_off_singleswitch_times.png](plot_test33_cond_prob_adapt_on_vs_adapt_off_singleswitch_times.png)
 
     $ ./run.sh --test-type=xsb --parallel --max=500000 --graph --test-name=test33_cond_prob
+
+#### single switch (1e6 samples)
+
+![plot_test33_cond_prob_adapt_on_vs_adapt_off_singleswitch_1e6_samples_times.png](plot_test33_cond_prob_adapt_on_vs_adapt_off_singleswitch_1e6_samples_times.png)
+
+    $ ./run.sh --test-type=xsb --parallel --max=1000000 --graph --test-name=test33_cond_prob
 
 #### multi switch with resampling probability=0.0 (amcmc)
 
