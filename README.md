@@ -80,7 +80,7 @@ For each plot the standard deviation is represented by error bars.
 
 ![plot_arithm_sample_mh_vs_gibbs_probs.png](plot_arithm_sample_mh_vs_gibbs_times.png)
 
-This experiments uses a lot of memory.
+This experiment uses a lot of memory.
 
     $ ./run.sh --test-type=swi --parallel --max=500000 --graph --test-name=arithm_sample
 
@@ -102,7 +102,7 @@ This experiments uses a lot of memory.
 
 ![plot_test33_cond_prob_adapt_on_vs_adapt_off_singleswitch_1e7_samples_times.png](plot_test33_cond_prob_adapt_on_vs_adapt_off_singleswitch_1e7_samples_times.png)
 
-    $ ./run.sh --test-type=xsb --parallel --max=1000000 --graph --test-name=test33_cond_prob
+    $ ./run.sh --test-type=xsb --parallel --max=10000000 --graph --test-name=test33_cond_prob
 
 #### multi switch with resampling probability=0.0 (amcmc)
 
