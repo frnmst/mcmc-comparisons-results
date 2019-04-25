@@ -13,9 +13,11 @@
     - [Software](#software)
   - [Results](#results)
     - [arithm_sample (cplint)](#arithm_sample-cplint)
+    - [arithm_adapt_on_vs_adapt_off (amcmc)](#arithm_adapt_on_vs_adapt_off-amcmc)
+      - [single switch](#single-switch)
     - [test33_sample (cplint)](#test33_sample-cplint)
     - [test33_adapt_on_vs_adapt_off (amcmc)](#test33_adapt_on_vs_adapt_off-amcmc)
-      - [single switch](#single-switch)
+      - [single switch](#single-switch-1)
       - [single switch (1e7 samples)](#single-switch-1e7-samples)
       - [multi switch with resampling probability=0.0 (amcmc)](#multi-switch-with-resampling-probability00-amcmc)
       - [multi switch with resampling probability=0.5 (amcmc)](#multi-switch-with-resampling-probability05-amcmc)
@@ -84,7 +86,7 @@ This experiment uses a lot of memory.
 
     $ ./run.sh --test-type=swi --parallel --max=370000 --graph --test-name=arithm_sample
 
-### arith_adapt_on_vs_adapt_off (amcmc)
+### arithm_adapt_on_vs_adapt_off (amcmc)
 
 #### single switch
 
