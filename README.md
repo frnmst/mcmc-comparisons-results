@@ -82,7 +82,15 @@ For each plot the standard deviation is represented by error bars.
 
 This experiment uses a lot of memory.
 
-    $ ./run.sh --test-type=swi --parallel --max=500000 --graph --test-name=arithm_sample
+    $ ./run.sh --test-type=swi --parallel --max=370000 --graph --test-name=arithm_sample
+
+### arith_adapt_on_vs_adapt_off (amcmc)
+
+#### single switch
+
+![plot_arithm_cond_prob_adapt_on_vs_adapt_off_singleswitch_times.png](plot_arithm_cond_prob_adapt_on_vs_adapt_off_singleswitch_times.png)
+
+    $ ./run.sh --test-type=xsb --parallel --max=1000000 --graph --test-name=arithm_cond_prob
 
 ### test33_sample (cplint)
 
