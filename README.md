@@ -64,7 +64,9 @@ due to the memory *restraints* of the virtual machine.
 
 Two prolog systems have been used:
 - *SWI Prolog*
-- and *XSB Prolog*
+- *XSB Prolog*
+
+See https://github.com/frnmst/mcmc-comparisons#dependencies
 
 To measure the running times, the two prolog systems have been instructed to 
 repeat a specific experiment, with fixed parameters, several number of times. 
