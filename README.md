@@ -12,17 +12,17 @@
     - [Hardware](#hardware)
     - [Software](#software)
   - [Results](#results)
-    - [arithm_sample (cplint)](#arithm_sample-cplint)
-    - [arithm_adapt_on_vs_adapt_off (amcmc)](#arithm_adapt_on_vs_adapt_off-amcmc)
+    - [arithm_sample (cplint) \[SWI\]](#arithm_sample-cplint-swi)
+    - [arithm_adapt_on_vs_adapt_off (amcmc) \[XSB\]](#arithm_adapt_on_vs_adapt_off-amcmc-xsb)
       - [single switch](#single-switch)
-    - [test33_sample (cplint)](#test33_sample-cplint)
-    - [test33_adapt_on_vs_adapt_off (amcmc)](#test33_adapt_on_vs_adapt_off-amcmc)
+    - [test33_sample (cplint) \[SWI\]](#test33_sample-cplint-swi)
+    - [test33_adapt_on_vs_adapt_off (amcmc) \[XSB\]](#test33_adapt_on_vs_adapt_off-amcmc-xsb)
       - [single switch](#single-switch-1)
       - [single switch (1e7 samples)](#single-switch-1e7-samples)
-      - [multi switch with resampling probability=0.0 (amcmc)](#multi-switch-with-resampling-probability00-amcmc)
-      - [multi switch with resampling probability=0.5 (amcmc)](#multi-switch-with-resampling-probability05-amcmc)
-      - [multi switch with resampling probability=1.0 (amcmc)](#multi-switch-with-resampling-probability10-amcmc)
-    - [test33 four way comparison (cplint and amcmc)](#test33-four-way-comparison-cplint-and-amcmc)
+      - [multi switch with resampling probability=0.0](#multi-switch-with-resampling-probability00)
+      - [multi switch with resampling probability=0.5](#multi-switch-with-resampling-probability05)
+      - [multi switch with resampling probability=1.0](#multi-switch-with-resampling-probability10)
+    - [test33 four way comparison (cplint and amcmc) \[SWI,XSB\]](#test33-four-way-comparison-cplint-and-amcmc-swixsb)
   - [Conclusions](#conclusions)
 
 [](TOC)
@@ -78,7 +78,7 @@ by NumPy, both of which are Python libraries.
 
 For each plot the standard deviation is represented by error bars.
 
-### arithm_sample (cplint)
+### arithm_sample (cplint) [SWI]
 
 ![plot_arithm_sample_mh_vs_gibbs_probs.png](plot_arithm_sample_mh_vs_gibbs_times.png)
 
@@ -86,7 +86,7 @@ This experiment uses a lot of memory.
 
     $ ./run.sh --test-type=swi --parallel --max=370000 --graph --test-name=arithm_sample
 
-### arithm_adapt_on_vs_adapt_off (amcmc)
+### arithm_adapt_on_vs_adapt_off (amcmc) [XSB]
 
 #### single switch
 
@@ -94,13 +94,13 @@ This experiment uses a lot of memory.
 
     $ ./run.sh --test-type=xsb --parallel --max=1000000 --graph --test-name=arithm_cond_prob
 
-### test33_sample (cplint)
+### test33_sample (cplint) [SWI]
 
 ![plot_test33_sample_mh_vs_gibbs_times.png](plot_test33_sample_mh_vs_gibbs_times.png)
 
     $ ./run.sh --test-type=swi --parallel --max=500000 --graph --test-name=test33_sample
 
-### test33_adapt_on_vs_adapt_off (amcmc)
+### test33_adapt_on_vs_adapt_off (amcmc) [XSB]
 
 #### single switch
 
@@ -114,25 +114,25 @@ This experiment uses a lot of memory.
 
     $ ./run.sh --test-type=xsb --parallel --max=10000000 --graph --test-name=test33_cond_prob
 
-#### multi switch with resampling probability=0.0 (amcmc)
+#### multi switch with resampling probability=0.0
 
 ![plot_test33_cond_prob_adapt_on_vs_adapt_off_multiswitch_00_times.png](plot_test33_cond_prob_adapt_on_vs_adapt_off_multiswitch_00_times.png)
 
     $ ./run.sh --test-type=xsb --multi-switch=0.0 --max=500000 --graph --test-name=test33_cond_prob
 
-#### multi switch with resampling probability=0.5 (amcmc)
+#### multi switch with resampling probability=0.5
 
 ![(plot_test33_cond_prob_adapt_on_vs_adapt_off_multiswitch_05_times.png](plot_test33_cond_prob_adapt_on_vs_adapt_off_multiswitch_05_times.png)
 
     $ ./run.sh --test-type=xsb --multi-switch=0.5 --max=500000 --graph --test-name=test33_cond_prob
 
-#### multi switch with resampling probability=1.0 (amcmc)
+#### multi switch with resampling probability=1.0
 
 ![plot_test33_cond_prob_adapt_on_vs_adapt_off_multiswitch_10_times.png](plot_test33_cond_prob_adapt_on_vs_adapt_off_multiswitch_10_times.png)
 
     $ ./run.sh --test-type=xsb --multi-switch=1.0 --max=500000 --graph --test-name=test33_cond_prob
 
-### test33 four way comparison (cplint and amcmc)
+### test33 four way comparison (cplint and amcmc) [SWI,XSB]
 
 ![plot_test33_times.png](plot_test33_times.png)
 
