@@ -83,7 +83,7 @@ For each plot the standard deviation is represented by error bars.
 
 | cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
 |--------|------------------|----------------|------------|------------|
-| 077a951b866a7433236cfa0ef622a3b936fd57a6 | aa6106bfefab31aced4e7962c2d4863ea3d0e19f | - | `7.7.19` | - |
+| [077a951b866a7433236cfa0ef622a3b936fd57a6](https://github.com/friguzzi/cplint/tree/077a951b866a7433236cfa0ef622a3b936fd57a6) | [aa6106bfefab31aced4e7962c2d4863ea3d0e19f](https://github.com/frnmst/mcmc-comparisons/tree/aa6106bfefab31aced4e7962c2d4863ea3d0e19f) | - | `7.7.19` | - |
 
 #### Plots
 
