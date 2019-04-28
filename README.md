@@ -20,6 +20,10 @@
       - [Summary](#summary-1)
       - [Software Versions](#software-versions-1)
       - [Plots](#plots-1)
+    - [Experiment 2](#experiment-2)
+      - [Summary](#summary-2)
+      - [Software Versions](#software-versions-2)
+      - [Plots](#plots-2)
 
 [](TOC)
 
@@ -115,3 +119,22 @@ For each plot the standard deviation is represented by error bars.
 
 ![data/experiment-1/plot_test33_sample_mh_vs_gibbs_times.png](data/experiment-1/plot_test33_sample_mh_vs_gibbs_times.png)
 
+### Experiment 2
+
+#### Summary
+
+| Experiment name | Computer id | Command | Raw data |
+|-----------------|-------------|---------|----------|
+| arithm_cond_prob   | 0           | `./run.sh -p -t arithm_cond_prob --repetitions=16 -y xsb -g -M 100000` | [data/experiment-2/test33_cond_prob.csv](data/experiment-1/test33_cond_prob.csv) |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| - | [4fa657c3317e09524c6f081d7fe9b26bac7f877f](https://github.com/frnmst/mcmc-comparisons/tree/4fa657c3317e09524c6f081d7fe9b26bac7f877f) | - | - | `3.8.0` |
+
+#### Plots
+
+![data/experiment-2/plot_arithm_cond_prob_adapt_on_vs_adapt_off_probs.png](data/experiment-2/plot_arithm_cond_prob_adapt_on_vs_adapt_off_probs.png)
+
+![data/experiment-2/plot_arithm_cond_prob_adapt_on_vs_adapt_off_times.png](data/experiment-2/plot_arithm_cond_prob_adapt_on_vs_adapt_off_times.png)
