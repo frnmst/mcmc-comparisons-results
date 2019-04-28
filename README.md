@@ -131,7 +131,7 @@ For each plot the standard deviation is represented by error bars.
 
 | cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
 |--------|------------------|----------------|------------|------------|
-| - | [4fa657c3317e09524c6f081d7fe9b26bac7f877f](https://github.com/frnmst/mcmc-comparisons/tree/4fa657c3317e09524c6f081d7fe9b26bac7f877f) | - | - | `3.8.0` |
+| - | [4fa657c3317e09524c6f081d7fe9b26bac7f877f](https://github.com/frnmst/mcmc-comparisons/tree/4fa657c3317e09524c6f081d7fe9b26bac7f877f) | [db4e37120d60680cb0302b05c18aee815fe54c72](https://github.com/frnmst/Adaptive-MCMC/tree/db4e37120d60680cb0302b05c18aee815fe54c72) | - | `3.8.0` |
 
 #### Plots
 
