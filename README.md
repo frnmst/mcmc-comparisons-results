@@ -125,7 +125,7 @@ For each plot the standard deviation is represented by error bars.
 
 | Experiment name | Computer id | Command | Raw data |
 |-----------------|-------------|---------|----------|
-| arithm_cond_prob   | 0           | `./run.sh -p -t arithm_cond_prob --repetitions=16 -y xsb -g -M 100000` | [data/experiment-2/test33_cond_prob.csv](data/experiment-1/test33_cond_prob.csv) |
+| arithm_cond_prob   | 0           | `./run.sh -p -t arithm_cond_prob --repetitions=16 -y xsb -g -M 100000` | [data/experiment-2/arithm_cond_prob.csv](data/experiment-2/arithm_cond_prob.csv) |
 
 #### Software Versions
 
