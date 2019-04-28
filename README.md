@@ -91,3 +91,23 @@ For each plot the standard deviation is represented by error bars.
 
 ![data/experiment-0/plot_arithm_sample_mh_vs_gibbs_times.png](data/experiment-0/plot_arithm_sample_mh_vs_gibbs_times.png)
 
+### Experiment 1
+
+#### Summary
+
+| Experiment name | Computer id | Command | Raw data |
+|-----------------|-------------|---------|----------|
+| test33_sample   | 0           | `./run.sh --repetitions=16 -p -t test33_sample -g -M 50000` | [data/experiment-1/test33_sample.csv](data/experiment-1/test33_sample.csv) |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [077a951b866a7433236cfa0ef622a3b936fd57a6](https://github.com/friguzzi/cplint/tree/077a951b866a7433236cfa0ef622a3b936fd57a6) | [aa6106bfefab31aced4e7962c2d4863ea3d0e19f](https://github.com/frnmst/mcmc-comparisons/tree/aa6106bfefab31aced4e7962c2d4863ea3d0e19f) | - | `7.7.19` | - |
+
+#### Plots
+
+![data/experiment-1/plot_test33_sample_mh_vs_gibbs_probs.png](data/experiment-1/plot_test33_sample_mh_vs_gibbs_probs.png)
+
+![data/experiment-1/plot_test33_sample_mh_vs_gibbs_times.png](data/experiment-1/plot_test33_sample_mh_vs_gibbs_times.png)
+
