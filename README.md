@@ -82,18 +82,23 @@ For each plot the standard deviation is represented by error bars.
 
 ## Key
 
-An explanation of the structure of the tables
+An explanation of the structure of the tables.
 
-### Summary
+### The *Summary* tables
 
 |  -   | Name | Computer id | Command | Data |
 |------|------|-------------|---------|------|
 | Comment | the experiment name as used in the command | the computer that executed the experiment | the CLI command or file | a link to the raw CSV file containing the results |
 | Type | str | int | str:verbatim | str:link |
 
-### Software versions
+### The *Software versions* tables
 
-TODO
+A *Software version* table contains references to the commit hash (the 
+short version of the SHA-1 git commit hash) or the software version used 
+for that particular experiment.
+
+Software which has not been used for an experiment is marked with a dash 
+character: `-`
 
 ## Experiments
 
