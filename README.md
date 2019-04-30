@@ -11,22 +11,25 @@
   - [Materials and methods](#materials-and-methods)
     - [Hardware](#hardware)
     - [Software](#software)
+  - [Key](#key)
+    - [Summary](#summary)
+    - [Software versions](#software-versions)
   - [Experiments](#experiments)
     - [Experiment 0](#experiment-0)
-      - [Summary](#summary)
-      - [Software Versions](#software-versions)
+      - [Summary](#summary-1)
+      - [Software versions](#software-versions-1)
       - [Plots](#plots)
     - [Experiment 1](#experiment-1)
-      - [Summary](#summary-1)
-      - [Software Versions](#software-versions-1)
-      - [Plots](#plots-1)
-    - [Experiment 2](#experiment-2)
       - [Summary](#summary-2)
       - [Software Versions](#software-versions-2)
-      - [Plots](#plots-2)
-    - [Experiment 3](#experiment-3)
+      - [Plots](#plots-1)
+    - [Experiment 2](#experiment-2)
       - [Summary](#summary-3)
       - [Software Versions](#software-versions-3)
+      - [Plots](#plots-2)
+    - [Experiment 3](#experiment-3)
+      - [Summary](#summary-4)
+      - [Software Versions](#software-versions-4)
       - [Plots](#plots-3)
 
 [](TOC)
@@ -54,14 +57,10 @@ computations, plotting is carried out.
 
 ### Hardware
 
-Most of the experiments have been run in a virtual machine with 4 cores 
-assigned and a total memory of 14 Gigabytes, 1 of which as swap.
-
 | Computer id | Processor cores | Threads per core | Memory (GB) | Swap (GB) | Virtual machine | OS | comment |
 |-------------|-----------------|------------------|-------------|-----------|-----------------|----|---------|
-| 0 | 4 | 1 | 14  | 1 | yes | Parabola GNU/Linux-libre x86-64 | |
-| 1 | 2 | 2 | 12 | 0 | no | Parabola GNU/Linux-libre x86-64 | |
-| 2 | ? | ? | ? | ? | ? | COKA UNIFE | ? | ? |
+| 0 | 4 | 1 | 14 | 1 | yes | Parabola GNU/Linux-libre x86-64 | |
+| 1 | ? | ? | ? | ? | ? | ? | COKA UNIFE |
 
 ### Software
 
@@ -81,17 +80,32 @@ by NumPy, both of which are Python libraries.
 
 For each plot the standard deviation is represented by error bars.
 
+## Key
+
+An explanation of the structure of the tables
+
+### Summary
+
+|  -   | Name | Computer id | Command | Data |
+|------|------|-------------|---------|------|
+| Comment | the experiment name as used in the command | the computer that executed the experiment | the CLI command or file | a link to the raw CSV file containing the results |
+| Type | str | int | str:verbatim | str:link |
+
+### Software versions
+
+TODO
+
 ## Experiments
 
 ### Experiment 0
 
 #### Summary
 
-| Experiment name | Computer id | Command | Raw data |
-|-----------------|-------------|---------|----------|
-| arithm_sample   | 0           | `./run.sh --repetitions=16 -p -t arithm_sample -g -M 28000` | [data/experiment-0/arithm_sample.csv](data/experiment-0/arithm_sample.csv) |
+| Name | Computer id | Command | Data |
+|------|-------------|---------|------|
+| arithm_sample | 0 | `./run.sh --repetitions=16 -p -t arithm_sample -g -M 28000` | [data/experiment-0/arithm_sample.csv](data/experiment-0/arithm_sample.csv) |
 
-#### Software Versions
+#### Software versions
 
 | cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
 |--------|------------------|----------------|------------|------------|
@@ -107,9 +121,9 @@ For each plot the standard deviation is represented by error bars.
 
 #### Summary
 
-| Experiment name | Computer id | Command | Raw data |
-|-----------------|-------------|---------|----------|
-| test33_sample   | 0           | `./run.sh --repetitions=16 -p -t test33_sample -g -M 50000` | [data/experiment-1/test33_sample.csv](data/experiment-1/test33_sample.csv) |
+| Name | Computer id | Command | Data |
+|------|-------------|---------|------|
+| test33_sample | 0 | `./run.sh --repetitions=16 -p -t test33_sample -g -M 50000` | [data/experiment-1/test33_sample.csv](data/experiment-1/test33_sample.csv) |
 
 #### Software Versions
 
@@ -127,9 +141,9 @@ For each plot the standard deviation is represented by error bars.
 
 #### Summary
 
-| Experiment name | Computer id | Command | Raw data |
-|-----------------|-------------|---------|----------|
-| arithm_cond_prob   | 0           | `./run.sh -p -t arithm_cond_prob --repetitions=16 -y xsb -g -M 100000` | [data/experiment-2/arithm_cond_prob.csv](data/experiment-2/arithm_cond_prob.csv) |
+| Name | Computer id | Command | Data |
+|------|-------------|---------|------|
+| arithm_cond_prob | 0 | `./run.sh -p -t arithm_cond_prob --repetitions=16 -y xsb -g -M 100000` | [data/experiment-2/arithm_cond_prob.csv](data/experiment-2/arithm_cond_prob.csv) |
 
 #### Software Versions
 
@@ -147,9 +161,9 @@ For each plot the standard deviation is represented by error bars.
 
 #### Summary
 
-| Experiment name | Computer id | Command | Raw data |
-|-----------------|-------------|---------|----------|
-| arithm_sample   | 0           | `./run.sh --repetitions=64 -p -t arithm_sample -g -M 28000` | [data/experiment-3/arithm_sample.csv](data/experiment-3/arithm_sample.csv) |
+| Name | Computer id | Command | Data |
+|------|-------------|---------|------|
+| arithm_sample | 0 | `./run.sh --repetitions=64 -p -t arithm_sample -g -M 28000` | [data/experiment-3/arithm_sample.csv](data/experiment-3/arithm_sample.csv) |
 
 #### Software Versions
 
