@@ -1,10 +1,10 @@
-# A Comparison between AMCMC and MCINTYRE
+# Experimental results of AMCMC and MCINTYRE comparisons
 
 ## Table of contents
 
 [](TOC)
 
-- [A Comparison between AMCMC and MCINTYRE](#a-comparison-between-amcmc-and-mcintyre)
+- [Experimental results of AMCMC and MCINTYRE comparisons](#experimental-results-of-amcmc-and-mcintyre-comparisons)
   - [Table of contents](#table-of-contents)
   - [Abstract](#abstract)
   - [Introduction](#introduction)
@@ -12,25 +12,29 @@
     - [Hardware](#hardware)
     - [Software](#software)
   - [Key](#key)
-    - [Summary](#summary)
-    - [Software versions](#software-versions)
+    - [The *Summary* tables](#the-summary-tables)
+    - [The *Software versions* tables](#the-software-versions-tables)
   - [Experiments](#experiments)
     - [Experiment 0](#experiment-0)
-      - [Summary](#summary-1)
-      - [Software versions](#software-versions-1)
+      - [Summary](#summary)
+      - [Software versions](#software-versions)
       - [Plots](#plots)
     - [Experiment 1](#experiment-1)
-      - [Summary](#summary-2)
-      - [Software Versions](#software-versions-2)
+      - [Summary](#summary-1)
+      - [Software Versions](#software-versions-1)
       - [Plots](#plots-1)
     - [Experiment 2](#experiment-2)
-      - [Summary](#summary-3)
-      - [Software Versions](#software-versions-3)
+      - [Summary](#summary-2)
+      - [Software Versions](#software-versions-2)
       - [Plots](#plots-2)
     - [Experiment 3](#experiment-3)
+      - [Summary](#summary-3)
+      - [Software Versions](#software-versions-3)
+      - [Plots](#plots-3)
+    - [Experiment 4](#experiment-4)
       - [Summary](#summary-4)
       - [Software Versions](#software-versions-4)
-      - [Plots](#plots-3)
+      - [Plots](#plots-4)
 
 [](TOC)
 
@@ -181,3 +185,23 @@ character: `-`
 ![data/experiment-3/plot_arithm_sample_mh_vs_gibbs_probs.png](data/experiment-3/plot_arithm_sample_mh_vs_gibbs_probs.png)
 
 ![data/experiment-3/plot_arithm_sample_mh_vs_gibbs_times.png](data/experiment-3/plot_arithm_sample_mh_vs_gibbs_times.png)
+
+### Experiment 4
+
+#### Summary
+
+| Name | Computer id | Command | Data |
+|------|-------------|---------|------|
+| arithm_rejection_sample | 0 | `./run.sh --repetitions=16 -p -t arithm_rejection_sample -g -M 28000` | [data/experiment-4/arithm_rejection_sample.csv](data/experiment-4/arithm_sample.csv) |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [077a951](https://github.com/friguzzi/cplint/tree/077a951b866a7433236cfa0ef622a3b936fd57a6) | [f0e6b2d](f0e6b2de5800f9f74f8b73e2178e22fc64e76b08) | - | `8.0.1` | - |
+
+#### Plots
+
+![data/experiment-4/plot_arithm_rejection_sample_mh_vs_gibbs_probs.png](data/experiment-4/plot_arithm_rejection_sample_mh_vs_gibbs_probs.png)
+
+![data/experiment-4/plot_arithm_rejection_sample_mh_vs_gibbs_times.png](data/experiment-4/plot_arithm_rejection_sample_mh_vs_gibbs_times.png)
