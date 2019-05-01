@@ -192,7 +192,7 @@ character: `-`
 
 | Name | Computer id | Command | Data |
 |------|-------------|---------|------|
-| arithm_rejection_sample | 0 | `./run.sh --repetitions=16 -p -t arithm_rejection_sample -g -M 28000` | [data/experiment-4/arithm_rejection_sample.csv](data/experiment-4/arithm_sample.csv) |
+| arithm_rejection_sample | 0 | `./run.sh --repetitions=16 -p -t arithm_rejection_sample -g -M 28000` | [data/experiment-4/arithm_rejection_sample.csv](data/experiment-4/arithm_rejection_sample.csv) |
 
 #### Software Versions
 
