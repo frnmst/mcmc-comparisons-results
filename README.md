@@ -198,7 +198,7 @@ character: `-`
 
 | cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
 |--------|------------------|----------------|------------|------------|
-| [077a951](https://github.com/friguzzi/cplint/tree/077a951b866a7433236cfa0ef622a3b936fd57a6) | [f0e6b2d](f0e6b2de5800f9f74f8b73e2178e22fc64e76b08) | - | `8.0.1` | - |
+| [077a951](https://github.com/friguzzi/cplint/tree/077a951b866a7433236cfa0ef622a3b936fd57a6) | [f0e6b2d](https://github.com/frnmst/mcmc-comparisons/tree/f0e6b2de5800f9f74f8b73e2178e22fc64e76b08) | - | `8.0.1` | - |
 
 #### Plots
 
