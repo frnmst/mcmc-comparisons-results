@@ -39,6 +39,10 @@
       - [Summary](#summary-5)
       - [Software Versions](#software-versions-5)
       - [Plots](#plots-5)
+    - [Experiment 6](#experiment-6)
+      - [Summary](#summary-6)
+      - [Software Versions](#software-versions-6)
+      - [Plots](#plots-6)
 
 [](TOC)
 
@@ -229,3 +233,23 @@ character: `-`
 ![data/experiment-0005/plot_arithm_rejection_sample_mh_vs_gibbs_probs.png](data/experiment-0005/plot_arithm_rejection_sample_mh_vs_gibbs_probs.png)
 
 ![data/experiment-0005/plot_arithm_rejection_sample_mh_vs_gibbs_times.png](data/experiment-0005/plot_arithm_rejection_sample_mh_vs_gibbs_times.png)
+
+### Experiment 6
+
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_sample | 0 | `./run.sh -p -t arithm_sample -g -M 28000` | [data/experiment-0006/arithm_sample.csv](data/experiment-0006/arithm_sample.csv) | using the `simplegibbs` branch |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [b2b4b49](https://github.com/friguzzi/cplint/tree/b2b4b49d486fc276cc3ab43b5e3f350b571a3541) | [c97f9c7](https://github.com/frnmst/mcmc-comparisons/tree/c97f9c74b7a5733e97fe393857bc5d94db305fb3) | - | `8.0.1` | - |
+
+#### Plots
+
+![data/experiment-0006/plot_arithm_sample_mh_vs_gibbs_probs.png](data/experiment-0006/plot_arithm_sample_mh_vs_gibbs_probs.png)
+
+![data/experiment-0006/plot_arithm_sample_mh_vs_gibbs_times.png](data/experiment-0006/plot_arithm_sample_mh_vs_gibbs_times.png)
