@@ -15,26 +15,30 @@
     - [The *Summary* tables](#the-summary-tables)
     - [The *Software versions* tables](#the-software-versions-tables)
   - [Experiments](#experiments)
-    - [Experiment 0](#experiment-0)
+    - [Experiment 0](#experiment-0000)
       - [Summary](#summary)
       - [Software versions](#software-versions)
       - [Plots](#plots)
-    - [Experiment 1](#experiment-1)
+    - [Experiment 1](#experiment-0001)
       - [Summary](#summary-1)
       - [Software Versions](#software-versions-1)
       - [Plots](#plots-1)
-    - [Experiment 2](#experiment-2)
+    - [Experiment 2](#experiment-0002)
       - [Summary](#summary-2)
       - [Software Versions](#software-versions-2)
       - [Plots](#plots-2)
-    - [Experiment 3](#experiment-3)
+    - [Experiment 3](#experiment-0003)
       - [Summary](#summary-3)
       - [Software Versions](#software-versions-3)
       - [Plots](#plots-3)
-    - [Experiment 4](#experiment-4)
+    - [Experiment 4](#experiment-0004)
       - [Summary](#summary-4)
       - [Software Versions](#software-versions-4)
       - [Plots](#plots-4)
+    - [Experiment 5](#experiment-0005)
+      - [Summary](#summary-5)
+      - [Software Versions](#software-versions-5)
+      - [Plots](#plots-5)
 
 [](TOC)
 
@@ -90,10 +94,10 @@ An explanation of the structure of the tables.
 
 ### The *Summary* tables
 
-|  -   | Name | Computer id | Command | Data |
-|------|------|-------------|---------|------|
-| Comment | the experiment name as used in the command | the computer that executed the experiment | the CLI command or file | a link to the raw CSV file containing the results |
-| Type | str | int | str:verbatim | str:link |
+|  -   | Name | Computer id | Command | Data | Comment |
+|------|------|-------------|---------|------|---------|
+| Comment | the experiment name as used in the command | the computer that executed the experiment | the CLI command or file | a link to the raw CSV file containing the results | other relevant information |
+| Type | str | int | str:verbatim | str:link | str |
 
 ### The *Software versions* tables
 
@@ -110,9 +114,9 @@ character: `-`
 
 #### Summary
 
-| Name | Computer id | Command | Data |
-|------|-------------|---------|------|
-| arithm_sample | 0 | `./run.sh --repetitions=16 -p -t arithm_sample -g -M 28000` | [data/experiment-0/arithm_sample.csv](data/experiment-0/arithm_sample.csv) |
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_sample | 0 | `./run.sh --repetitions=16 -p -t arithm_sample -g -M 28000` | [data/experiment-0000/arithm_sample.csv](data/experiment-0000/arithm_sample.csv) | |
 
 #### Software versions
 
@@ -122,17 +126,17 @@ character: `-`
 
 #### Plots
 
-![data/experiment-0/plot_arithm_sample_mh_vs_gibbs_probs.png](data/experiment-0/plot_arithm_sample_mh_vs_gibbs_probs.png)
+![data/experiment-0000/plot_arithm_sample_mh_vs_gibbs_probs.png](data/experiment-0000/plot_arithm_sample_mh_vs_gibbs_probs.png)
 
-![data/experiment-0/plot_arithm_sample_mh_vs_gibbs_times.png](data/experiment-0/plot_arithm_sample_mh_vs_gibbs_times.png)
+![data/experiment-0000/plot_arithm_sample_mh_vs_gibbs_times.png](data/experiment-0000/plot_arithm_sample_mh_vs_gibbs_times.png)
 
 ### Experiment 1
 
 #### Summary
 
-| Name | Computer id | Command | Data |
-|------|-------------|---------|------|
-| test33_sample | 0 | `./run.sh --repetitions=16 -p -t test33_sample -g -M 50000` | [data/experiment-1/test33_sample.csv](data/experiment-1/test33_sample.csv) |
+| Name | Computer id | Command | Data | Comment | 
+|------|-------------|---------|------|---------|
+| test33_sample | 0 | `./run.sh --repetitions=16 -p -t test33_sample -g -M 50000` | [data/experiment-0001/test33_sample.csv](data/experiment-0001/test33_sample.csv) | |
 
 #### Software Versions
 
@@ -142,17 +146,17 @@ character: `-`
 
 #### Plots
 
-![data/experiment-1/plot_test33_sample_mh_vs_gibbs_probs.png](data/experiment-1/plot_test33_sample_mh_vs_gibbs_probs.png)
+![data/experiment-0001/plot_test33_sample_mh_vs_gibbs_probs.png](data/experiment-0001/plot_test33_sample_mh_vs_gibbs_probs.png)
 
-![data/experiment-1/plot_test33_sample_mh_vs_gibbs_times.png](data/experiment-1/plot_test33_sample_mh_vs_gibbs_times.png)
+![data/experiment-0001/plot_test33_sample_mh_vs_gibbs_times.png](data/experiment-0001/plot_test33_sample_mh_vs_gibbs_times.png)
 
 ### Experiment 2
 
 #### Summary
 
-| Name | Computer id | Command | Data |
-|------|-------------|---------|------|
-| arithm_cond_prob | 0 | `./run.sh -p -t arithm_cond_prob --repetitions=16 -y xsb -g -M 100000` | [data/experiment-2/arithm_cond_prob.csv](data/experiment-2/arithm_cond_prob.csv) |
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_cond_prob | 0 | `./run.sh -p -t arithm_cond_prob --repetitions=16 -y xsb -g -M 100000` | [data/experiment-0002/arithm_cond_prob.csv](data/experiment-0002/arithm_cond_prob.csv) | |
 
 #### Software Versions
 
@@ -162,17 +166,17 @@ character: `-`
 
 #### Plots
 
-![data/experiment-2/plot_arithm_cond_prob_adapt_on_vs_adapt_off_probs.png](data/experiment-2/plot_arithm_cond_prob_adapt_on_vs_adapt_off_probs.png)
+![data/experiment-0002/plot_arithm_cond_prob_adapt_on_vs_adapt_off_probs.png](data/experiment-0002/plot_arithm_cond_prob_adapt_on_vs_adapt_off_probs.png)
 
-![data/experiment-2/plot_arithm_cond_prob_adapt_on_vs_adapt_off_times.png](data/experiment-2/plot_arithm_cond_prob_adapt_on_vs_adapt_off_times.png)
+![data/experiment-0002/plot_arithm_cond_prob_adapt_on_vs_adapt_off_times.png](data/experiment-0002/plot_arithm_cond_prob_adapt_on_vs_adapt_off_times.png)
 
 ### Experiment 3
 
 #### Summary
 
-| Name | Computer id | Command | Data |
-|------|-------------|---------|------|
-| arithm_sample | 0 | `./run.sh --repetitions=64 -p -t arithm_sample -g -M 28000` | [data/experiment-3/arithm_sample.csv](data/experiment-3/arithm_sample.csv) |
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_sample | 0 | `./run.sh --repetitions=64 -p -t arithm_sample -g -M 28000` | [data/experiment-0003/arithm_sample.csv](data/experiment-0003/arithm_sample.csv) | compared to experiment 0, the standard deviation decreased a little because of the increased number of experiments |
 
 #### Software Versions
 
@@ -182,17 +186,17 @@ character: `-`
 
 #### Plots
 
-![data/experiment-3/plot_arithm_sample_mh_vs_gibbs_probs.png](data/experiment-3/plot_arithm_sample_mh_vs_gibbs_probs.png)
+![data/experiment-0003/plot_arithm_sample_mh_vs_gibbs_probs.png](data/experiment-0003/plot_arithm_sample_mh_vs_gibbs_probs.png)
 
-![data/experiment-3/plot_arithm_sample_mh_vs_gibbs_times.png](data/experiment-3/plot_arithm_sample_mh_vs_gibbs_times.png)
+![data/experiment-0003/plot_arithm_sample_mh_vs_gibbs_times.png](data/experiment-0003/plot_arithm_sample_mh_vs_gibbs_times.png)
 
 ### Experiment 4
 
 #### Summary
 
-| Name | Computer id | Command | Data |
-|------|-------------|---------|------|
-| arithm_rejection_sample | 0 | `./run.sh --repetitions=16 -p -t arithm_rejection_sample -g -M 28000` | [data/experiment-4/arithm_rejection_sample.csv](data/experiment-4/arithm_rejection_sample.csv) |
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_rejection_sample | 0 | `./run.sh --repetitions=16 -p -t arithm_rejection_sample -g -M 28000` | [data/experiment-0004/arithm_rejection_sample.csv](data/experiment-0004/arithm_rejection_sample.csv) | |
 
 #### Software Versions
 
@@ -202,6 +206,26 @@ character: `-`
 
 #### Plots
 
-![data/experiment-4/plot_arithm_rejection_sample_mh_vs_gibbs_probs.png](data/experiment-4/plot_arithm_rejection_sample_mh_vs_gibbs_probs.png)
+![data/experiment-0004/plot_arithm_rejection_sample_mh_vs_gibbs_probs.png](data/experiment-0004/plot_arithm_rejection_sample_mh_vs_gibbs_probs.png)
 
-![data/experiment-4/plot_arithm_rejection_sample_mh_vs_gibbs_times.png](data/experiment-4/plot_arithm_rejection_sample_mh_vs_gibbs_times.png)
+![data/experiment-0004/plot_arithm_rejection_sample_mh_vs_gibbs_times.png](data/experiment-0004/plot_arithm_rejection_sample_mh_vs_gibbs_times.png)
+
+### Experiment 5
+
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_rejection_sample | 0 | `./run.sh -p -t arithm_rejection_sample -g -M 28000` | [data/experiment-0005/arithm_rejection_sample.csv](data/experiment-0005/arithm_rejection_sample.csv) | using the `simplegibbs` branch |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [b2b4b49](https://github.com/friguzzi/cplint/tree/b2b4b49d486fc276cc3ab43b5e3f350b571a3541) | [c97f9c7](https://github.com/frnmst/mcmc-comparisons/tree/c97f9c74b7a5733e97fe393857bc5d94db305fb3) | - | `8.0.1` | - |
+
+#### Plots
+
+![data/experiment-0005/plot_arithm_rejection_sample_mh_vs_gibbs_probs.png](data/experiment-0005/plot_arithm_rejection_sample_mh_vs_gibbs_probs.png)
+
+![data/experiment-0005/plot_arithm_rejection_sample_mh_vs_gibbs_times.png](data/experiment-0005/plot_arithm_rejection_sample_mh_vs_gibbs_times.png)
