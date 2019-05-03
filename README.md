@@ -105,12 +105,13 @@ An explanation of the structure of the tables.
 
 ### The *Software versions* tables
 
-A *Software version* table contains references to the commit hash (the 
-short version of the SHA-1 git commit hash) or the software version used 
-for that particular experiment.
+|   -     | cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|---------|--------|------------------|----------------|------------|------------|
+| Comment | git SHA-1 commit | git SHA-1 commit | git SHA-1 commit | version number | version number |
+| Type    | str:link | str:link | str:link | str:verbatim | str:verbatim | 
 
 Software which has not been used for an experiment is marked with a dash 
-character: `-`
+character such as `-`
 
 ## Experiments
 
