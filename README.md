@@ -134,7 +134,7 @@ character: `-`
 
 #### Summary
 
-| Name | Computer id | Command | Data | Comment | 
+| Name | Computer id | Command | Data | Comment |
 |------|-------------|---------|------|---------|
 | test33_sample | 0 | `./run.sh --repetitions=16 -p -t test33_sample -g -M 50000` | [data/experiment-0001/test33_sample.csv](data/experiment-0001/test33_sample.csv) | |
 
