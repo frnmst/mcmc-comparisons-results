@@ -293,6 +293,6 @@ character such as `-`
 
 #### Plots
 
-![data/experiment-0009/plot_arithm_sample_mh_vs_gibbs_probs.png](data/experiment-0009/plot_arithm_sample_mh_vs_gibbs_probs.png)
+![data/experiment-0009/plot_arithm_rejection_sample_mh_vs_gibbs_probs.png](data/experiment-0009/plot_arithm_rejection_sample_mh_vs_gibbs_probs.png)
 
-![data/experiment-0009/plot_arithm_sample_mh_vs_gibbs_times.png](data/experiment-0009/plot_arithm_sample_mh_vs_gibbs_times.png)
+![data/experiment-0009/plot_arithm_rejection_sample_mh_vs_gibbs_times.png](data/experiment-0009/plot_arithm_rejection_sample_mh_vs_gibbs_times.png)
