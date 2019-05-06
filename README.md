@@ -284,7 +284,7 @@ character such as `-`
 
 | Name | Computer id | Command | Data | Comment |
 |------|-------------|---------|------|---------|
-| arithm_rejection_sample | 0 | `./run.sh -p -t arithm_rejection_sample -g -M 28000` | [data/experiment-0009/arithm_sample.csv](data/experiment-0009/arithm_sample.csv) | using the `amcmc` branch in cplint |
+| arithm_rejection_sample | 0 | `./run.sh -p -t arithm_rejection_sample -g -M 28000` | [data/experiment-0009/arithm_rejection_sample.csv](data/experiment-0009/arithm_rejection_sample.csv) | using the `amcmc` branch in cplint |
 
 #### Software Versions
 
@@ -304,7 +304,7 @@ character such as `-`
 
 | Name | Computer id | Command | Data | Comment |
 |------|-------------|---------|------|---------|
-| arithm_rejection_sample | 0 | `./run.sh --repetitions=16 -p -t arithm_rejection_sample -g -M 28000` | [data/experiment-0010/arithm_sample.csv](data/experiment-0010/arithm_sample.csv) | using the `amcmc` branch in cplint |
+| arithm_rejection_sample | 0 | `./run.sh --repetitions=16 -p -t arithm_rejection_sample -g -M 28000` | [data/experiment-0010/arithm_rejection_sample.csv](data/experiment-0010/arithm_rejection_sample.csv) | using the `amcmc` branch in cplint |
 
 #### Software Versions
 
