@@ -325,7 +325,7 @@ character such as `-`
 
 | Name | Computer id | Command | Data | Comment |
 |------|-------------|---------|------|---------|
-| arithm_sample | 0 | `./run.sh --repetitions=16 -p -t arithm_sample -g -M 28000` | [data/experiment-0011/arithm_sample.csv](data/experiment-0011/arithm_sample.csv) | using the `amcmc` branch in cplint |
+| arithm_sample | 0 | `./run.sh --repetitions=16 -p -t arithm_sample -g -M 54000` | [data/experiment-0011/arithm_sample.csv](data/experiment-0011/arithm_sample.csv) | using the `amcmc` branch in cplint |
 
 #### Software Versions
 
