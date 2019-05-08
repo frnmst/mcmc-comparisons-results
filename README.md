@@ -404,7 +404,7 @@ srun --multi-prog run_slurm.conf
 
 | Name | Computer id | Command | Data | Comment |
 |------|-------------|---------|------|---------|
-| arithm_sample | 0 | `./run.sh --repetitions=128 -p -t arithm_sample -g -M 10000` | [data/experiment-0013/arithm_sample.csv](data/experiment-0013/arithm_sample.csv) | using the `amcmc` branch in cplint |
+| arithm_sample | 0 | `./run.sh --repetitions=128 -p -t arithm_sample -g -M 10000` | [data/experiment-0013/arithm_sample.csv](data/experiment-0013/arithm_sample.csv) | using the `amcmc` branch in cplint with a total of 128*4=512 runs |
 
 #### Software Versions
 
