@@ -28,6 +28,7 @@
     - [Experiment 10](#experiment-10)
     - [Experiment 11](#experiment-11)
     - [Experiment 12](#experiment-12)
+    - [Experiment 13](#experiment-13)
 
 [](TOC)
 
@@ -396,3 +397,23 @@ srun --multi-prog run_slurm.conf
 ![data/experiment-0012/plot_arithm_sample_mh_vs_gibbs_probs.png](data/experiment-0012/plot_arithm_sample_mh_vs_gibbs_probs.png)
 
 ![data/experiment-0012/plot_arithm_sample_mh_vs_gibbs_times.png](data/experiment-0012/plot_arithm_sample_mh_vs_gibbs_times.png)
+
+### Experiment 13
+
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_sample | 0 | `./run.sh --repetitions=128 -p -t arithm_sample -g -M 10000` | [data/experiment-0013/arithm_sample.csv](data/experiment-0013/arithm_sample.csv) | using the `amcmc` branch in cplint |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [f4b4b47](https://github.com/friguzzi/cplint/tree/f4b4b471fb4913aa882fb0621ca4e64f2ad06c4e) | [973d464](https://github.com/frnmst/mcmc-comparisons/tree/973d464ae89578d3de21bd605c213d2fa20d4d81) | - | `8.0.1` | - |
+
+#### Plots
+
+![data/experiment-0013/plot_arithm_sample_mh_vs_gibbs_probs.png](data/experiment-0013/plot_arithm_sample_mh_vs_gibbs_probs.png)
+
+![data/experiment-0013/plot_arithm_sample_mh_vs_gibbs_times.png](data/experiment-0013/plot_arithm_sample_mh_vs_gibbs_times.png)
