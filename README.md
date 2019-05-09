@@ -402,3 +402,23 @@ character such as `-`
 
 ![data/experiment-0014/plot_test33_sample_mh_vs_gibbs_times.png](data/experiment-0014/plot_test33_sample_mh_vs_gibbs_times.png)
 
+### Experiment 15
+
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_sample | 0 | `./run.sh -p -t arithm_sample -g -M 28000` | [data/experiment-0015/arithm_sample.csv](data/experiment-0015/arithm_sample.csv) | using the `amcmc` branch in cplint and `mc_gibbs_sample(eval(2,4),eval(1,3),Samples,Prob,[block(2),mix(100)]),`|
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [f4b4b47](https://github.com/friguzzi/cplint/tree/f4b4b471fb4913aa882fb0621ca4e64f2ad06c4e) | [65844c8](https://github.com/frnmst/mcmc-comparisons/tree/65844c8a9b241000bcb7f5ca1c49472ad3f5bc68) | - | `8.0.1` | - |
+
+#### Plots
+
+![data/experiment-0015/plot_arithm_sample_mh_vs_gibbs_probs.png](data/experiment-0015/plot_arithm_sample_mh_vs_gibbs_probs.png)
+
+![data/experiment-0015/plot_arithm_sample_mh_vs_gibbs_times.png](data/experiment-0015/plot_arithm_sample_mh_vs_gibbs_times.png)
+
