@@ -29,6 +29,7 @@
     - [Experiment 11](#experiment-11)
     - [Experiment 12](#experiment-12)
     - [Experiment 13](#experiment-13)
+    - [Experiment 14](#experiment-14)
 
 [](TOC)
 
@@ -347,50 +348,13 @@ character such as `-`
 
 | Name | Computer id | Command | Data | Comment |
 |------|-------------|---------|------|---------|
-| arithm_sample | 1 | `sbatch run_slurm.sh` | [data/experiment-0012/arithm_sample.csv](data/experiment-0012/arithm_sample.csv) | using the `amcmc` branch in cplint and first experiment using COKA |
-
-TODO, FIXME: The following files should be generated automatically by the fbopt script.
-
-`run_slurm.sh`
-```
-#SBATCH --job-name=arithm_sample
-#SBATCH --error=arithm_sample-%j.err
-#SBATCH --output=arithm_sample-%j.out
-#SBATCH --ntasks=4
-#SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=8192
-#SBATCH --partition=longrun
-
-export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
-
-. ../includes/variables.sh
-. ../includes/shared.sh
-
-srun --multi-prog run_slurm.conf
-```
-
-`run_slurm.conf`
-```
-0-3 ./frontend.sh %t
-```
-
-`frontend.sh`
-```
-. ../includes/variables.sh
-. ../includes/shared.sh
-. ../includes/fbopt \
-    --test-name arithm_sample \
-    --min 1000 \
-    --max 28000 \
-    --step 1000 \
-    --single-run-with-label=$((${1}+1))
-```
+| arithm_sample | 1 | `./run.sh -S --partition longrun -M 28000` | [data/experiment-0012/arithm_sample.csv](data/experiment-0012/arithm_sample.csv) | using the `amcmc` branch in cplint and first experiment using COKA |
 
 #### Software Versions
 
 | cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
 |--------|------------------|----------------|------------|------------|
-| [f4b4b47](https://github.com/friguzzi/cplint/tree/f4b4b471fb4913aa882fb0621ca4e64f2ad06c4e) | [19c5513](https://github.com/frnmst/mcmc-comparisons/tree/19c5513230d43800732b6bf153bd12e25e2d64ee) | - | `8.1.5` | - |
+| [f4b4b47](https://github.com/friguzzi/cplint/tree/f4b4b471fb4913aa882fb0621ca4e64f2ad06c4e) | [9eb43fb](https://github.com/frnmst/mcmc-comparisons/tree/9eb43fb5cd172b4f26afdd1d4535bc4d41f68697) | - | `8.1.5` | - |
 
 #### Plots
 
@@ -417,3 +381,24 @@ srun --multi-prog run_slurm.conf
 ![data/experiment-0013/plot_arithm_sample_mh_vs_gibbs_probs.png](data/experiment-0013/plot_arithm_sample_mh_vs_gibbs_probs.png)
 
 ![data/experiment-0013/plot_arithm_sample_mh_vs_gibbs_times.png](data/experiment-0013/plot_arithm_sample_mh_vs_gibbs_times.png)
+
+### Experiment 14
+
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| test33_sample | 0 | `./run.sh --repetitions=16 -p -t test33_sample -g -M 28000` | [data/experiment-0014/test33_sample.csv](data/experiment-0014/test33_sample.csv) | using the `amcmc` branch in cplint |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [f4b4b47](https://github.com/friguzzi/cplint/tree/f4b4b471fb4913aa882fb0621ca4e64f2ad06c4e) | [9eb43fb](https://github.com/frnmst/mcmc-comparisons/tree/9eb43fb5cd172b4f26afdd1d4535bc4d41f68697) | - | `8.0.1` | - |
+
+#### Plots
+
+![data/experiment-0014/plot_test33_sample_mh_vs_gibbs_probs.png](data/experiment-0014/plot_test33_sample_mh_vs_gibbs_probs.png)
+
+![data/experiment-0014/plot_test33_sample_mh_vs_gibbs_times.png](data/experiment-0014/plot_test33_sample_mh_vs_gibbs_times.png)
+
