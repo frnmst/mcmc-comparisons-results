@@ -31,6 +31,8 @@
     - [Experiment 13](#experiment-13)
     - [Experiment 14](#experiment-14)
     - [Experiment 15](#experiment-15)
+  - [New experiments](#new-experiments)
+    - [Experiment 16](#experiment-16)
 
 [](TOC)
 
@@ -78,7 +80,7 @@ experiments.
 Plotting is handled by Matplotlib while some statitical computations are done 
 by NumPy, both of which are Python libraries.
 
-For each plot the standard deviation is represented by error bars.
+Error bars represent the standard deviation in plots.
 
 ## Key
 
@@ -409,7 +411,7 @@ character such as `-`
 
 | Name | Computer id | Command | Data | Comment |
 |------|-------------|---------|------|---------|
-| arithm_sample | 0 | `./run.sh -p -t arithm_sample -g -M 28000` | [data/experiment-0015/arithm_sample.csv](data/experiment-0015/arithm_sample.csv) | using the `amcmc` branch in cplint and `mc_gibbs_sample(eval(2,4),eval(1,3),Samples,Prob,[block(2),mix(100)]),`|
+| arithm_sample | 0 | `./run.sh -p -t arithm_sample -g -M 28000` | [data/experiment-0015/arithm_sample.csv](data/experiment-0015/arithm_sample.csv) | using the `amcmc` branch in cplint and `mc_gibbs_sample(eval(2,4),eval(1,3),Samples,Prob,[block(2),mix(100)]),` |
 
 #### Software Versions
 
@@ -423,3 +425,34 @@ character such as `-`
 
 ![data/experiment-0015/plot_arithm_sample_mh_vs_gibbs_times.png](data/experiment-0015/plot_arithm_sample_mh_vs_gibbs_times.png)
 
+## New experiments
+
+### Experiment 16
+
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_sample_three | 0 | `./run.sh -p -t arithm_sample_three -g -M 10000 -m 100 -s 100 -r 8` | [data/experiment-0016/arithm_sample_three.csv](data/experiment-0016/arithm_sample_three.csv) | |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [08cc5c3](https://github.com/frnmst/mcmc-comparisons/tree/08cc5c3327a38f0df48e14501a3758949ee67f57) | - | `8.0.1` | - |
+
+#### Plots
+
+#### Average
+
+![data/experiment-0016/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0016/plot_time_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
+
+![data/experiment-0016/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png](data/experiment-0016/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
+
+#### First run only
+
+![data/experiment-0016/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0016/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+![data/experiment-0016/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0016/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+![data/experiment-0016/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0016/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
