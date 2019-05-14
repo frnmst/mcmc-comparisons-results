@@ -34,6 +34,7 @@
   - [New experiments](#new-experiments)
     - [Experiment 16](#experiment-16)
     - [Experiment 17](#experiment-17)
+    - [Experiment 18](#experiment-18)
 
 [](TOC)
 
@@ -487,3 +488,33 @@ character such as `-`
 ![data/experiment-0017/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0017/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
 
 ![data/experiment-0017/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0017/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+### Experiment 18
+
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_sample_three | 0 | `./run.sh -p -t arithm_sample_three -g -m 10100 -M 14100 -s 100 -r 8 && ./run.sh --graph-only --first-experiment-only -t arithm_sample_three` | [data/experiment-0018/arithm_sample_three.csv](data/experiment-0018/arithm_sample_three.csv) | |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [37638cc](https://github.com/frnmst/mcmc-comparisons/tree/37638cc37b02607281bd9815ebd88322de293ca1) | - | `8.0.1` | - |
+
+#### Plots
+
+#### Average
+
+![data/experiment-0018/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0018/plot_time_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
+
+![data/experiment-0018/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png](data/experiment-0018/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
+
+#### First run only
+
+![data/experiment-0018/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0018/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+![data/experiment-0018/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0018/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+![data/experiment-0018/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0018/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
