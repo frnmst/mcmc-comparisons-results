@@ -33,6 +33,7 @@
     - [Experiment 15](#experiment-15)
   - [New experiments](#new-experiments)
     - [Experiment 16](#experiment-16)
+    - [Experiment 17](#experiment-17)
 
 [](TOC)
 
@@ -433,7 +434,7 @@ character such as `-`
 
 | Name | Computer id | Command | Data | Comment |
 |------|-------------|---------|------|---------|
-| arithm_sample_three | 0 | `./run.sh -p -t arithm_sample_three -g -M 10000 -m 100 -s 100 -r 8` | [data/experiment-0016/arithm_sample_three.csv](data/experiment-0016/arithm_sample_three.csv) | |
+| arithm_sample_three | 0 | `./run.sh -p -t arithm_sample_three -g -M 10000 -m 100 -s 100 -r 8 && ./run.sh --graph-only --first-experiment-only -t arithm_sample_three` | [data/experiment-0016/arithm_sample_three.csv](data/experiment-0016/arithm_sample_three.csv) | |
 
 #### Software Versions
 
@@ -456,3 +457,33 @@ character such as `-`
 ![data/experiment-0016/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0016/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
 
 ![data/experiment-0016/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0016/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+### Experiment 17
+
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_sample_three | 0 | `./run.sh -p -t arithm_sample_three -g -m 10100 -M 14100 -r 8 && ./run.sh --graph-only --first-experiment-only -t arithm_sample_three` | [data/experiment-0017/arithm_sample_three.csv](data/experiment-0017/arithm_sample_three.csv) | |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [68a8c3f](https://github.com/frnmst/mcmc-comparisons/tree/68a8c3f495e738ae74988504a57ad4c16b287be1) | - | `8.0.1` | - |
+
+#### Plots
+
+#### Average
+
+![data/experiment-0017/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0017/plot_time_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
+
+![data/experiment-0017/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png](data/experiment-0017/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
+
+#### First run only
+
+![data/experiment-0017/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0017/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+![data/experiment-0017/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0017/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+![data/experiment-0017/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0017/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
