@@ -656,8 +656,6 @@ character such as `-`
 
 ### Experiment 25
 
-`./run.sh -S -t hmm_sample_three -m 10100 -M 28100 -s 100 --partition=longrun`
-
 #### Summary
 
 | Name | Computer id | Command | Data | Comment |
