@@ -619,11 +619,11 @@ character such as `-`
 
 ### Experiment 22
 
- `./run.sh -S -t arithm_sample_three -m 10100 -M 14100 --partition=longrun`
+failed
 
 ### Experiment 23
 
- `./run.sh -S -t arithm_sample_three -m 10100 -M 14100 -s 100 --partition=longrun`
+failed
 
 ### Experiment 24
 
@@ -633,7 +633,7 @@ IGNORE THIS
 
 | Name | Computer id | Command | Data | Comment |
 |------|-------------|---------|------|---------|
-| hmm_sample_three | 1 | `./run.sh -S -t hmm_sample_three -M 10000 -m 100 -s 100 --partition=longrun` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1876753.csv` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1876753.csv --first-experiment-only` | [data/experiment-0024/job-1876753.csv](data/experiment-0024/job-1876753.csv) | [using a patched version for mcintyre of hmm.pl](https://github.com/frnmst/mcmc-comparisons#the-hmm-experiment). Still on branch amcmc |
+| hmm_sample_three | 1 | `./run.sh -S -t hmm_sample_three -M 10000 -m 100 -s 100 --partition=longrun` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1876753.csv` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1876753.csv --first-experiment-only` | [data/experiment-0024/job-1876753.csv](data/experiment-0024/job-1876753.csv) | [using a patched version for mcintyre of hmm.pl](https://github.com/frnmst/mcmc-comparisons#the-hmm-experiment). cplint still on branch amcmc |
 
 #### Software Versions
 
@@ -665,7 +665,7 @@ IGNORE THIS
 
 | Name | Computer id | Command | Data | Comment |
 |------|-------------|---------|------|---------|
-| hmm_sample_three | 1 | `./run.sh -S -t hmm_sample_three -m 10100 -M 28100 -s 100 --partition=longrun` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1876752.csv` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1876752.csv --first-experiment-only` | [data/experiment-0025/job-1876752.csv](data/experiment-0025/job-1876752.csv) | [using a patched version for mcintyre of hmm.pl](https://github.com/frnmst/mcmc-comparisons#the-hmm-experiment). Still on branch amcmc |
+| hmm_sample_three | 1 | `./run.sh -S -t hmm_sample_three -m 10100 -M 28100 -s 100 --partition=longrun` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1876752.csv` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1876752.csv --first-experiment-only` | [data/experiment-0025/job-1876752.csv](data/experiment-0025/job-1876752.csv) | [using a patched version for mcintyre of hmm.pl](https://github.com/frnmst/mcmc-comparisons#the-hmm-experiment). cplint still on branch amcmc |
 
 #### Software Versions
 
@@ -701,7 +701,7 @@ IGNORE THIS
 
 | cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
 |--------|------------------|----------------|------------|------------|
-| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [caec3f4](https://github.com/frnmst/mcmc-comparisons/tree/caec3f4fb75183072f410ada011d5ea2edf31e58) | - | `8.1.5` | - |
+| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [caec3f4](https://github.com/frnmst/mcmc-comparisons/tree/caec3f4fb75183072f410ada011d5ea2edf31e58) | - | `8.0.1` | - |
 
 #### Plots
 
@@ -718,3 +718,33 @@ IGNORE THIS
 ![data/experiment-0026/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0026/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
 
 ![data/experiment-0026/plot_prob_over_time_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0026/plot_prob_over_time_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
+
+### Experiment 27
+
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| hmm_sample_three | 0 | `./run.sh -S -t hmm_sample_three -m 10100 -M 28100 -s 100 --partition=normal` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-200.csv` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-200.csv --first-experiment-only` | [data/experiment-0027/job-200.csv](data/experiment-0027/job-200.csv) | [using a patched version for mcintyre of hmm.pl](https://github.com/frnmst/mcmc-comparisons#the-hmm-experiment) |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [caec3f4](https://github.com/frnmst/mcmc-comparisons/tree/caec3f4fb75183072f410ada011d5ea2edf31e58) | - | `8.0.1` | - |
+
+#### Plots
+
+#### Average
+
+![data/experiment-0027/plot_time_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0027/plot_time_over_sample_mh_vs_gibbs_vs_rejection_avg_of_hmm_sample_three.png)
+
+![data/experiment-0027/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_hmm_sample_three.png](data/experiment-0027/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_hmm_sample_three.png)
+
+#### First run only
+
+![data/experiment-0027/plot_time_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0027/plot_time_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
+
+![data/experiment-0027/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0027/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
+
+![data/experiment-0027/plot_prob_over_time_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0027/plot_prob_over_time_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
