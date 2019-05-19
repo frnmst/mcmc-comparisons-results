@@ -43,6 +43,9 @@
     - [Experiment 24](#experiment-24)
     - [Experiment 25](#experiment-25)
     - [Experiment 26](#experiment-26)
+    - [Experiment 27](#experiment-27)
+    - [Experiment 28](#experiment-28)
+    - [Experiment 29](#experiment-29)
 
 [](TOC)
 
@@ -705,7 +708,7 @@ ignore
 
 | cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
 |--------|------------------|----------------|------------|------------|
-| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [caec3f4](https://github.com/frnmst/mcmc-comparisons/tree/caec3f4fb75183072f410ada011d5ea2edf31e58) | - | `8.0.1` | - |
+| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [caec3f4](https://github.com/frnmst/mcmc-comparisons/tree/caec3f4fb75183072f410ada011d5ea2edf31e58) | - | `8.1.5` | - |
 
 #### Plots
 
@@ -735,7 +738,7 @@ ignore
 
 | cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
 |--------|------------------|----------------|------------|------------|
-| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [caec3f4](https://github.com/frnmst/mcmc-comparisons/tree/caec3f4fb75183072f410ada011d5ea2edf31e58) | - | `8.0.1` | - |
+| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [caec3f4](https://github.com/frnmst/mcmc-comparisons/tree/caec3f4fb75183072f410ada011d5ea2edf31e58) | - | `8.1.5` | - |
 
 #### Plots
 
