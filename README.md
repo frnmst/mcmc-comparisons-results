@@ -592,33 +592,7 @@ character such as `-`
 
 ### Experiment 21
 
-#### Summary
-
-| Name | Computer id | Command | Data | Comment |
-|------|-------------|---------|------|---------|
-| arithm_sample_three | 1 | `./run.sh -S -t arithm_sample_three -M 10000 -m 100 -s 100 --partition=longrun` `./run.sh --graph-only --first-experiment-only -t arithm_sample_three` | [data/experiment-0021/arithm_sample_three.csv](data/experiment-0021/arithm_sample_three.csv) | |
-
-#### Software Versions
-
-| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
-|--------|------------------|----------------|------------|------------|
-| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [a489727](https://github.com/frnmst/mcmc-comparisons/tree/a4897272d4e151a1da9a52cd1776d1dd7e7d487f) | - | `8.1.5` | - |
-
-#### Plots
-
-#### Average
-
-![data/experiment-0021/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0021/plot_time_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
-
-![data/experiment-0021/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png](data/experiment-0021/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
-
-#### First run only
-
-![data/experiment-0021/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0021/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
-
-![data/experiment-0021/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0021/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
-
-![data/experiment-0021/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0021/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+failed
 
 ### Experiment 22
 
