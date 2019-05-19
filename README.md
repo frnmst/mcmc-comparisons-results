@@ -732,7 +732,7 @@ ignore
 
 | Name | Computer id | Command | Data | Comment |
 |------|-------------|---------|------|---------|
-| hmm_sample_three | 1 | `./run.sh -S -t hmm_sample_three -m 10100 -M 28100 -s 100 --partition=longrun` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-200.csv` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-200.csv --first-experiment-only` | [data/experiment-0029/job-200.csv](data/experiment-0029/job-200.csv) | [using a patched version for mcintyre of hmm.pl](https://github.com/frnmst/mcmc-comparisons#the-hmm-experiment) |
+| hmm_sample_three | 1 | `./run.sh -S -t hmm_sample_three -m 10100 -M 28100 -s 100 --partition=longrun` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1876791.csv` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1876791.csv --first-experiment-only` | [data/experiment-0029/job-1876791.csv](data/experiment-0029/job-1876791.csv) | [using a patched version for mcintyre of hmm.pl](https://github.com/frnmst/mcmc-comparisons#the-hmm-experiment) |
 
 #### Software Versions
 
