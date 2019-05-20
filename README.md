@@ -49,6 +49,7 @@
     - [Experiment 32](#experiment-32)
     - [Experiment 33 (possibly)](#experiment-33-possibly)
     - [Experiment 34](#experiment-34)
+    - [Experiment 35](#experiment-35)
 
 [](TOC)
 
@@ -787,13 +788,12 @@ ignore
 
 ### Experiment 32
 
-coka
-./run.sh -S -t arithm_sample_three -M 10000 --partition=shortrun
+failed
 
 ### Experiment 33 (possibly)
 
 coka
-./run.sh -S -t arithm_sample_three -m 10000 -M 20000 --partition=shortrun
+./run.sh -S -t arithm_sample_three -m 10000 -M 20000 --partition=longrun
 
 ### Experiment 34
 
@@ -824,3 +824,8 @@ coka
 ![data/experiment-0034/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0034/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
 
 ![data/experiment-0034/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0034/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+### Experiment 35
+
+coka
+./run.sh -S -t arithm_sample_three -M 10000 --partition=longrun
