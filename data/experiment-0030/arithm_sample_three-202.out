@@ -1,0 +1,48 @@
+Called with: Experiment_name="arithm_sample_three", Output_file="job-202.csv", Min=1000, Max=10000, Step=1000, Runs=2, Parallel=1
+performing arithm_sample_three.pl on "job-202.csv"
+Called with: Experiment_name="arithm_sample_three", Output_file="job-202.csv", Min=1000, Max=10000, Step=1000, Runs=3, Parallel=1
+performing arithm_sample_three.pl on "job-202.csv"
+Called with: Experiment_name="arithm_sample_three", Output_file="job-202.csv", Min=1000, Max=10000, Step=1000, Runs=1, Parallel=1
+performing arithm_sample_three.pl on "job-202.csv"
+Called with: Experiment_name="arithm_sample_three", Output_file="job-202.csv", Min=1000, Max=10000, Step=1000, Runs=4, Parallel=1
+performing arithm_sample_three.pl on "job-202.csv"
+run 4, sample 1000 of 10000
+run 1, sample 1000 of 10000
+run 2, sample 1000 of 10000
+run 4, sample 2000 of 10000
+run 4, sample 3000 of 10000
+run 3, sample 1000 of 10000
+run 1, sample 2000 of 10000
+run 2, sample 2000 of 10000
+run 3, sample 2000 of 10000
+run 1, sample 3000 of 10000
+run 4, sample 4000 of 10000
+run 1, sample 4000 of 10000
+run 3, sample 3000 of 10000
+run 4, sample 5000 of 10000
+run 3, sample 4000 of 10000
+run 4, sample 6000 of 10000
+run 2, sample 3000 of 10000
+run 3, sample 5000 of 10000
+run 1, sample 5000 of 10000
+run 2, sample 4000 of 10000
+run 4, sample 7000 of 10000
+run 3, sample 6000 of 10000
+run 1, sample 6000 of 10000
+run 2, sample 5000 of 10000
+run 3, sample 7000 of 10000
+run 1, sample 7000 of 10000
+run 2, sample 6000 of 10000
+run 4, sample 8000 of 10000
+run 1, sample 8000 of 10000
+run 2, sample 7000 of 10000
+run 3, sample 8000 of 10000
+run 1, sample 9000 of 10000
+run 2, sample 8000 of 10000
+run 4, sample 9000 of 10000
+run 2, sample 9000 of 10000
+run 3, sample 9000 of 10000
+run 3, sample 10000 of 10000
+run 1, sample 10000 of 10000
+run 2, sample 10000 of 10000
+run 4, sample 10000 of 10000
