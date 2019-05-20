@@ -3,8 +3,10 @@
 import sys
 import csv
 
-NUMBER_OF_FIELDS=8
+# Warning: this script works for *_three experiments. You must specify
+# the total number of runs manually here:
 MAX_RUNS=4
+NUMBER_OF_FIELDS=8
 
 class NotEnoughFields(Exception):
     """NotEnoughFields."""
