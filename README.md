@@ -40,6 +40,7 @@
     - [Experiment 23](#experiment-23)
     - [Experiment 24](#experiment-24)
     - [Experiment 25](#experiment-25)
+  - [Experiments to keep](#experiments-to-keep)
     - [Experiment 26](#experiment-26)
     - [Experiment 27](#experiment-27)
     - [Experiment 28](#experiment-28)
@@ -605,6 +606,8 @@ ignore
 ### Experiment 25
 
 ignore
+
+## Experiments to keep
 
 ### Experiment 26
 
