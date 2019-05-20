@@ -46,7 +46,7 @@ def get_and_write(filename_in: str, delimiter: str = ','):
                 csvwriter = csv.writer(csvfile, delimiter=delimiter)
                 for x in range(0, len(run_number[str(i)]['samples'])):
                     csvwriter.writerow([run_number[str(i)]['samples'][x], run_number[str(i)][id[w]][x]])
-        w += 1
+            w += 1
 
 if __name__ == '__main__':
     filename_in=sys.argv[1]
