@@ -48,7 +48,7 @@
     - [Experiment 30](#experiment-30)
     - [Experiment 31](#experiment-31)
     - [Experiment 32](#experiment-32)
-    - [Experiment 33 (possibly)](#experiment-33-possibly)
+    - [Experiment 33](#experiment-33)
     - [Experiment 34](#experiment-34)
     - [Experiment 35](#experiment-35)
 
@@ -589,11 +589,11 @@ character such as `-`
 
 ### Experiment 21
 
-failed
+Failed due to 8 hour timeout.
 
 ### Experiment 22
 
-failed
+Failed due to 8 hour timeout.
 
 ### Experiment 23
 
@@ -791,12 +791,13 @@ ignore
 
 ### Experiment 32
 
-failed
+Failed due to 8 hour timeout.
 
-### Experiment 33 (possibly)
+### Experiment 33
 
-coka
-./run.sh -S -t arithm_sample_three -m 10000 -M 20000 --partition=longrun
+Expected to failed due to 8 hour timeout.
+
+`./run.sh -S -t arithm_sample_three -m 10000 -M 20000 --partition=longrun`
 
 ### Experiment 34
 
@@ -830,5 +831,4 @@ coka
 
 ### Experiment 35
 
-coka
-./run.sh -S -t arithm_sample_three -M 10000 --partition=longrun
+Failed due to 8 hour timeout.
