@@ -54,6 +54,8 @@
     - [Experiment 36](#experiment-36)
     - [Experiment 37](#experiment-37)
     - [Experiment 38](#experiment-38)
+    - [Experiment 39](#experiment-39)
+    - [Experiment 40](#experiment-40)
 
 [](TOC)
 
@@ -864,7 +866,7 @@ Failed due to 8 hour timeout.
 
 ![data/experiment-0036/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0036/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
 
-![data/experiment-0034/plot_prob_over_time_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0034/plot_prob_over_time_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
+![data/experiment-0036/plot_prob_over_time_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0036/plot_prob_over_time_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
 
 ### Experiment 37
 
@@ -873,5 +875,38 @@ drive was corrupted. This was the command: `$ ./run.sh -S -t arithm_sample_three
 
 ### Experiment 38
 
-local
-./run.sh -S -t arithm_sample_three -m 10 -M 10000 -s 10 --partition=normal
+Failed because of insufficient memory: `./run.sh -S -t arithm_sample_three -m 10 -M 10000 -s 10 --partition=normal`
+
+### Experiment 39
+
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_sample_three | 0 | `./run.sh -S -t arithm_sample_three -m 10 -M 3000 -s 10 --partition=normal` ; `./run.sh --graph-only -t arithm_sample_three --output-file=job-218.csv` ; `./run.sh --graph-only -t arithm_sample_three --output-file=job-218.csv --first-experiment-only` | [data/experiment-0039/job-218.csv](data/experiment-0039/job-218.csv) | [using a patched version for mcintyre of arithm.pl](https://github.com/frnmst/mcmc-comparisons#the-arithm-experiment). Swap memory on the host machine was disabled |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [a264f5a](https://github.com/frnmst/mcmc-comparisons/tree/a264f5a422602b89f66ce7ac5e163e612d6fa3cf) | - | `8.0.1` | - |
+
+#### Plots
+
+#### Average
+
+![data/experiment-0039/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0039/plot_time_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
+
+![data/experiment-0039/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png](data/experiment-0039/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
+
+#### First run only
+
+![data/experiment-0039/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0039/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+![data/experiment-0039/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0039/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+![data/experiment-0039/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0039/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+### Experiment 40
+
+`./run.sh -S -t arithm_sample_three -M 6010 -m 3100 -s 10 --partition=normal`

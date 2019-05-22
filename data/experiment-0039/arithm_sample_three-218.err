@@ -1,0 +1,4 @@
+srun: error: vm: task 0: Exited with exit code 1
+srun: error: vm: task 2: Exited with exit code 1
+srun: error: vm: task 3: Exited with exit code 1
+srun: error: vm: task 1: Exited with exit code 1
