@@ -51,6 +51,9 @@
     - [Experiment 33](#experiment-33)
     - [Experiment 34](#experiment-34)
     - [Experiment 35](#experiment-35)
+    - [Experiment 36](#experiment-36)
+    - [Experiment 37](#experiment-37)
+    - [Experiment 38](#experiment-38)
 
 [](TOC)
 
@@ -71,7 +74,7 @@ computations, plotting is carried out.
 
 | Computer id | Processor cores | Threads per core | Memory (GB) | Swap (GB) | Virtual machine | OS | `$ uname -s -r -v` | comment |
 |-------------|-----------------|------------------|-------------|-----------|-----------------|----|--------------------|---------|
-| 0 | 4 | 1 | 14 | 1 | yes | Parabola GNU/Linux-libre x86-64 | `Linux 5.0.6-gnu-1 #1 SMP PREEMPT Fri Apr 5 01:39:09 UTC 2019` | |
+| 0 | 4 | 1 | 14 | 1 | yes | Parabola GNU/Linux-libre x86-64 | `Linux 5.0.6-gnu-1 #1 SMP PREEMPT Fri Apr 5 01:39:09 UTC 2019` or `Linux 5.1.3-gnu-1 #1 SMP PREEMPT Fri May 17 07:44:37 EDT 2019` | |
 | 1 | ? | ? | ? | ? | ? | ? | `Linux 3.10.0-957.1.3.el7.x86_64 #1 SMP Thu Nov 29 14:49:43 UTC 2018` | COKA UNIFE |
 
 ### Software
@@ -832,3 +835,43 @@ Expected to failed due to 8 hour timeout.
 ### Experiment 35
 
 Failed due to 8 hour timeout.
+
+### Experiment 36
+
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| hmm_sample_three | 0 | `./run.sh -S -t hmm_sample_three -m 28200 -M 48200 -s 100 --partition=normal` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-215.csv` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-215.csv --first-experiment-only` | [data/experiment-0036/job-215.csv](data/experiment-0036/job-215.csv) | [using a patched version for mcintyre of hmm.pl](https://github.com/frnmst/mcmc-comparisons#the-hmm-experiment). Swap memory on the host machine was disabled |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [a264f5a](https://github.com/frnmst/mcmc-comparisons/tree/a264f5a422602b89f66ce7ac5e163e612d6fa3cf) | - | `8.0.1` | - |
+
+#### Plots
+
+#### Average
+
+![data/experiment-0036/plot_time_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0036/plot_time_over_sample_mh_vs_gibbs_vs_rejection_avg_of_hmm_sample_three.png)
+
+![data/experiment-0036/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_hmm_sample_three.png](data/experiment-0036/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_hmm_sample_three.png)
+
+#### First run only
+
+![data/experiment-0036/plot_time_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0036/plot_time_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
+
+![data/experiment-0036/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0036/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
+
+![data/experiment-0034/plot_prob_over_time_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0034/plot_prob_over_time_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
+
+### Experiment 37
+
+Failed probably to insufficient memory. Host crashed and the virtual machine's hard 
+drive was corrupted. This was the command: `$ ./run.sh -S -t arithm_sample_three -m 10000 -M 15000 -s 100 --partition=normal`
+
+### Experiment 38
+
+local
+./run.sh -S -t arithm_sample_three -m 10 -M 10000 -s 10 --partition=normal
