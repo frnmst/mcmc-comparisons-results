@@ -883,7 +883,7 @@ Failed because of insufficient memory: `./run.sh -S -t arithm_sample_three -m 10
 
 | Name | Computer id | Command | Data | Comment |
 |------|-------------|---------|------|---------|
-| arithm_sample_three | 0 | `./run.sh -S -t arithm_sample_three -m 10 -M 3000 -s 10 --partition=normal` ; `./run.sh --graph-only -t arithm_sample_three --output-file=job-218.csv` ; `./run.sh --graph-only -t arithm_sample_three --output-file=job-218.csv --first-experiment-only` | [data/experiment-0039/job-218.csv](data/experiment-0039/job-218.csv) | [using a patched version for mcintyre of arithm.pl](https://github.com/frnmst/mcmc-comparisons#the-arithm-experiment). Swap memory on the host machine was disabled |
+| arithm_sample_three | 0 | `./run.sh -S -t arithm_sample_three -m 10 -M 3000 -s 10 --partition=normal` ; `./run.sh --graph-only -t arithm_sample_three --output-file=job-218.csv` ; `./run.sh --graph-only -t arithm_sample_three --output-file=job-218.csv --first-experiment-only` | [data/experiment-0039/job-218.csv](data/experiment-0039/job-218.csv) | |
 
 #### Software Versions
 
