@@ -930,7 +930,7 @@ job=1877485
 
 | cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
 |--------|------------------|----------------|------------|------------|
-| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [](https://github.com/frnmst/mcmc-comparisons/tree/50ec32740601ada4d8328c07f78067e88676bab0) | - | `8.1.5` | - |
+| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [50ec327](https://github.com/frnmst/mcmc-comparisons/tree/50ec32740601ada4d8328c07f78067e88676bab0) | - | `8.1.5` | - |
 
 #### Plots
 
