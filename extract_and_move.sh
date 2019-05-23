@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-EXPERIMENTS='26 27 28 29 30 31 34 36 39 40'
+EXPERIMENTS='26 27 28 29 30 31 34 36 39 40 42'
 
 for e in ${EXPERIMENTS}; do
     ./extract_and_write_raw_data_by_type.py data/experiment-00${e}/job-*.csv

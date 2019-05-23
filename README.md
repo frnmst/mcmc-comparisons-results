@@ -55,6 +55,9 @@
     - [Experiment 38](#experiment-38)
     - [Experiment 39](#experiment-39)
     - [Experiment 40](#experiment-40)
+    - [Experiment 41](#experiment-41)
+    - [Experiment 42](#experiment-42)
+    - [EXperiment 43](#experiment-43)
 
 [](TOC)
 
@@ -908,3 +911,45 @@ Failed because of insufficient memory: `./run.sh -S -t arithm_sample_three -m 10
 ![data/experiment-0040/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0040/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
 
 ![data/experiment-0040/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0040/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+### Experiment 41
+
+coka
+`./run.sh -S -t arithm_sample_three -m 100 -M 10000 -s 100 --partition=shortrun --memory=12gb`
+job=1877485
+
+### Experiment 42
+
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| hmm_sample_three | 1 | `./run.sh -S -t hmm_sample_three -m 100 -M 10000 -s 100 --partition=shortrun --memory=12gb` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1877486.csv` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1877486.csv --first-experiment-only` | [data/experiment-0042/job-1877486.csv](data/experiment-0042/job-1877486.csv) | |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [](https://github.com/frnmst/mcmc-comparisons/tree/50ec32740601ada4d8328c07f78067e88676bab0) | - | `8.1.5` | - |
+
+#### Plots
+
+#### Average
+
+![data/experiment-0042/plot_time_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0042/plot_time_over_sample_mh_vs_gibbs_vs_rejection_avg_of_hmm_sample_three.png)
+
+![data/experiment-0042/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_hmm_sample_three.png](data/experiment-0042/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_hmm_sample_three.png)
+
+#### First run only
+
+![data/experiment-0042/plot_time_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0042/plot_time_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
+
+![data/experiment-0042/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0042/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
+
+![data/experiment-0042/plot_prob_over_time_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0042/plot_prob_over_time_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
+
+### EXperiment 43
+
+coka
+`./run.sh -S -t arithm_sample_three -m 100 -M 10000 -s 100 --partition=longrun --memory=12gb`
+job=1877505
