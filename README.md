@@ -909,4 +909,30 @@ Failed because of insufficient memory: `./run.sh -S -t arithm_sample_three -m 10
 
 ### Experiment 40
 
-`./run.sh -S -t arithm_sample_three -M 6010 -m 3100 -s 10 --partition=normal`
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_sample_three | 0 | `./run.sh -S -t arithm_sample_three -M 4010 -m 3010 -s 10 --partition=normal` ; `./run.sh --graph-only -t arithm_sample_three --output-file=job-222.csv` ; `./run.sh --graph-only -t arithm_sample_three --output-file=job-222.csv --first-experiment-only` | [data/experiment-0040/job-222.csv](data/experiment-0040/job-222.csv) | |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [5f8dabe](https://github.com/frnmst/mcmc-comparisons/tree/5f8dabe2c24a7195cde180b53aa2e39f25c12f78) | - | `8.0.1` | - |
+
+#### Plots
+
+#### Average
+
+![data/experiment-0040/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0040/plot_time_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
+
+![data/experiment-0040/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png](data/experiment-0040/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
+
+#### First run only
+
+![data/experiment-0040/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0040/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+![data/experiment-0040/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0040/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+![data/experiment-0040/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0040/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
