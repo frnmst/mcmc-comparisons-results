@@ -6,9 +6,8 @@
 
 - [Experimental results of AMCMC and MCINTYRE comparisons](#experimental-results-of-amcmc-and-mcintyre-comparisons)
   - [Table of contents](#table-of-contents)
-  - [Materials and methods](#materials-and-methods)
-    - [Hardware](#hardware)
-    - [Software](#software)
+  - [References](#references)
+  - [Hardware](#hardware)
   - [Key](#key)
     - [The *Summary* tables](#the-summary-tables)
     - [The *Software versions* tables](#the-software-versions-tables)
@@ -59,43 +58,16 @@
 
 [](TOC)
 
-## Materials and methods
+## References
 
-The independent variable is the number of *samples*, i.e. the number of steps 
-to approximate the distribution. What we want to measure the dependent 
-variable, time.
+See https://github.com/frnmst/mcmc-comparisons/blob/master/README.md
 
-Every experiment is repeated on a different processor thread. The results of 
-these experiments are grouped by sample size so it is possible to compute the 
-average running times and standard deviations.
+## Hardware
 
-Once the data is saved on a CSV file and after some statistical 
-computations, plotting is carried out.
-
-### Hardware
-
-| Computer id | Processor cores | Threads per core | Memory (GB) | Swap (GB) | Virtual machine | OS | `$ uname -s -r -v` | comment |
-|-------------|-----------------|------------------|-------------|-----------|-----------------|----|--------------------|---------|
-| 0 | 4 | 1 | 14 | 1 | yes | Parabola GNU/Linux-libre x86-64 | `Linux 5.0.6-gnu-1 #1 SMP PREEMPT Fri Apr 5 01:39:09 UTC 2019` or `Linux 5.1.3-gnu-1 #1 SMP PREEMPT Fri May 17 07:44:37 EDT 2019` | |
-| 1 | ? | ? | ? | ? | ? | ? | `Linux 3.10.0-957.1.3.el7.x86_64 #1 SMP Thu Nov 29 14:49:43 UTC 2018` | COKA UNIFE |
-
-### Software
-
-Two prolog systems have been used:
-- *SWI Prolog*
-- *XSB Prolog*
-
-See https://github.com/frnmst/mcmc-comparisons#dependencies
-
-To measure the running times, the two prolog systems have been instructed to 
-repeat a specific experiment, with fixed parameters, several number of times. 
-This aspect is very important also because of the stochastic nature of these 
-experiments. 
-
-Plotting is handled by Matplotlib while some statitical computations are done 
-by NumPy, both of which are Python libraries.
-
-Error bars represent the standard deviation in plots.
+| Computer id | Processor cores | Threads per core | Memory (GB) | Swap (GB) | Virtual machine | OS | comment |
+|-------------|-----------------|------------------|-------------|-----------|-----------------|----|---------|
+| 0 | 4 | 1 | 14 | 1 | yes | Parabola GNU/Linux-libre x86-64 | |
+| 1 | ? | ? | ? | ? | ? | ? | COKA UNIFE |
 
 ## Key
 
