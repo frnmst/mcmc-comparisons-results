@@ -933,7 +933,7 @@ srun: error: node02: tasks 0-3: Terminated
 
 | Name | Computer id | Command | Data | Comment |
 |------|-------------|---------|------|---------|
-| hmm_sample_three | 1 | `./run.sh -S -t hmm_sample_three -m 100 -M 10000 -s 100 --partition=shortrun --memory=12gb` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1877486.csv` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1877486.csv --first-experiment-only` | [data/experiment-0042/job-1877486.csv](data/experiment-0042/job-1877486.csv) | |
+| hmm_sample_three | 1 | `./run.sh -S -t hmm_sample_three -m 100 -M 10000 -s 100 --partition=shortrun --memory=12gb` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1877486.csv` ; `./run.sh --graph-only -t hmm_sample_three --output-file=job-1877486.csv --first-experiment-only` | [data/experiment-0042/job-1877486.csv](data/experiment-0042/job-1877486.csv) | [using a patched version for mcintyre of hmm.pl](https://github.com/frnmst/mcmc-comparisons#the-hmm-experiment) |
 
 #### Software Versions
 
