@@ -57,7 +57,9 @@
     - [Experiment 40](#experiment-40)
     - [Experiment 41](#experiment-41)
     - [Experiment 42](#experiment-42)
-    - [EXperiment 43](#experiment-43)
+    - [Experiment 43](#experiment-43)
+    - [Experiment 44](#experiment-44)
+    - [Experiment 45](#experiment-45)
 
 [](TOC)
 
@@ -914,9 +916,16 @@ Failed because of insufficient memory: `./run.sh -S -t arithm_sample_three -m 10
 
 ### Experiment 41
 
-coka
+Failed.
+
 `./run.sh -S -t arithm_sample_three -m 100 -M 10000 -s 100 --partition=shortrun --memory=12gb`
-job=1877485
+
+```
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 1877485 ON node02 CANCELLED AT 2019-05-23T16:46:32 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 1877485.0 ON node02 CANCELLED AT 2019-05-23T16:46:32 DUE TO TIME LIMIT ***
+srun: error: node02: tasks 0-3: Terminated
+```
 
 ### Experiment 42
 
@@ -948,8 +957,50 @@ job=1877485
 
 ![data/experiment-0042/plot_prob_over_time_mh_vs_gibbs_vs_rejection_hmm_sample_three.png](data/experiment-0042/plot_prob_over_time_mh_vs_gibbs_vs_rejection_hmm_sample_three.png)
 
-### EXperiment 43
+### Experiment 43
 
-coka
+Failed.
+
 `./run.sh -S -t arithm_sample_three -m 100 -M 10000 -s 100 --partition=longrun --memory=12gb`
-job=1877505
+
+```
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1877505.0 ON node01 CANCELLED AT 2019-05-24T00:12:33 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 1877505 ON node01 CANCELLED AT 2019-05-24T00:12:33 DUE TO TIME LIMIT ***
+srun: error: node01: tasks 0-3: Terminated
+```
+
+### Experiment 44
+
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_sample_three | 1 | `./run.sh -S -t arithm_sample_three -m 100 -M 3000 -s 100 --partition=longrun --memory=12gb` ; `./run.sh --graph-only -t arithm_sample_three --output-file=job-1877557.csv` ; `./run.sh --graph-only -t arithm_sample_three --output-file=job-1877557.csv --first-experiment-only` | [data/experiment-0044/job-1877557.csv](data/experiment-0044/job-1877557.csv) | |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [50ec327](https://github.com/frnmst/mcmc-comparisons/tree/50ec32740601ada4d8328c07f78067e88676bab0) | - | `8.1.5` | - |
+
+#### Plots
+
+#### Average
+
+![data/experiment-0044/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0044/plot_time_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
+
+![data/experiment-0044/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png](data/experiment-0044/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
+
+#### First run only
+
+![data/experiment-0044/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0044/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+![data/experiment-0044/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0044/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+![data/experiment-0044/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0044/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+### Experiment 45
+
+coka:
+./run.sh -S -t arithm_sample_three -m 3100 -M 5100 -s 100 --partition=longrun --memory=12gb
