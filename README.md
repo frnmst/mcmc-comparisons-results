@@ -1002,6 +1002,6 @@ srun: error: node01: tasks 0-3: Terminated
 
 ### Experiment 45
 
-Failed see the raw data [here](data/experiment-0045).
+Failed. See the raw data [here](data/experiment-0045).
 
 `./run.sh -S -t arithm_sample_three -m 3100 -M 5100 -s 100 --partition=longrun --memory=12gb`
