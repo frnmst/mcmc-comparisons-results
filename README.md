@@ -67,9 +67,9 @@
     - [Experiment 49](#experiment-49)
     - [Experiment 50](#experiment-50)
     - [Experiment 51](#experiment-51)
-    - [Experiment 97](#experiment-97)
-    - [Experiment 98](#experiment-98)
-    - [Experiment 99](#experiment-99)
+    - [Experiment 97 (49 and 51)](#experiment-97-49-and-51)
+    - [Experiment 98 (48 and 50)](#experiment-98-48-and-50)
+    - [Experiment 99 (44 and 45, truncated at 4200 samples)](#experiment-99-44-and-45-truncated-at-4200-samples)
 
 [](TOC)
 
@@ -1173,14 +1173,8 @@ Failed. See the raw data [here](data/experiment-0045).
 Run 3 failed .
 `./run.sh -S -t arithm_sample_three -m 3100 -M 4200 -s 100 --partition=longrun --memory=12gb`
 
-### Experiment 97
+### Experiment 97 (49 and 51)
 
-Experiments 49 and 51
+### Experiment 98 (48 and 50)
 
-### Experiment 98
-
-Experiments 48 and 50
-
-### Experiment 99
-
-Experiments 44 and 45 (up to 4200 samples)
+### Experiment 99 (44 and 45, truncated at 4200 samples)
