@@ -7,6 +7,7 @@
 - [Experimental results of AMCMC and MCINTYRE comparisons](#experimental-results-of-amcmc-and-mcintyre-comparisons)
   - [Table of contents](#table-of-contents)
   - [References](#references)
+  - [License](#license)
   - [Hardware](#hardware)
   - [Key](#key)
     - [The *Summary* tables](#the-summary-tables)
@@ -79,7 +80,7 @@ See https://github.com/frnmst/mcmc-comparisons/blob/master/README.md
 
 ## License
 
-See license file.
+See the [LICENSE](LICENSE) file.
 
 ## Hardware
 
