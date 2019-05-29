@@ -1138,7 +1138,33 @@ Failed. See the raw data [here](data/experiment-0045).
 
 ### Experiment 50
 
-./run.sh -S -t arithm_sample_three -m 3100 -M 4200 -s 100 --partition=longrun --memory=12gb
+#### Summary
+
+| Name | Computer id | Command | Data | Comment |
+|------|-------------|---------|------|---------|
+| arithm_sample_three | 1 | `./run.sh -S -t arithm_sample_three -m 3100 -M 4200 -s 100 --partition=longrun --memory=12gb` ; `./run.sh --graph-only -t arithm_sample_three --output-file=job-1877899.csv` ; `./run.sh --graph-only -t arithm_sample_three --output-file=job-1877899.csv --first-experiment-only` | [data/experiment-0050/job-1877899.csv](data/experiment-0050/job-1877899.csv) | |
+
+#### Software Versions
+
+| cplint | mcmc-comparision | Adapative-MCMC | SWI Prolog | XSB Prolog |
+|--------|------------------|----------------|------------|------------|
+| [fe60804](https://github.com/friguzzi/cplint/tree/fe60804fd63e3ac41804e1d8e618415144c61fd3) | [50ec327](https://github.com/frnmst/mcmc-comparisons/tree/50ec32740601ada4d8328c07f78067e88676bab0) | - | `8.1.5` | - |
+
+#### Plots
+
+#### Average
+
+![data/experiment-0050/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0050/plot_time_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
+
+![data/experiment-0050/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png](data/experiment-0050/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_avg_of_arithm_sample_three.png)
+
+#### First run only
+
+![data/experiment-0050/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0050/plot_time_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+![data/experiment-0050/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0050/plot_prob_over_sample_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
+
+![data/experiment-0050/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0050/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
 
 ### Experiment 51
 
@@ -1159,4 +1185,4 @@ Failed. See the raw data [here](data/experiment-0045).
 
 ### Experiment 99
 
-
+44 + 45 (until 4200)
