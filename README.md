@@ -1170,7 +1170,8 @@ Failed. See the raw data [here](data/experiment-0045).
 
 ### Experiment 51
 
-Run 3 failed .
+Run 3 failed. See the raw data [here](data/experiment-0051).
+
 `./run.sh -S -t arithm_sample_three -m 3100 -M 4200 -s 100 --partition=longrun --memory=12gb`
 
 ### Experiment 97 (49 and 51)
