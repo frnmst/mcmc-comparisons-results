@@ -107,6 +107,8 @@ character such as `-`
 
 ## Experiments
 
+The important experiments are the ones below *[In paper](#in-paper)*.
+
 ### Experiment 0
 
 #### Summary
