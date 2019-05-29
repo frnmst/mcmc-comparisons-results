@@ -77,6 +77,10 @@
 
 See https://github.com/frnmst/mcmc-comparisons/blob/master/README.md
 
+## License
+
+See license file.
+
 ## Hardware
 
 | Computer id | Processor cores | Threads per core | Memory (GB) | Swap (GB) | Virtual machine | OS | comment |
