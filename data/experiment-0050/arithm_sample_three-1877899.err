@@ -1,0 +1,4 @@
+srun: error: node03: task 0: Exited with exit code 1
+srun: error: node03: task 1: Exited with exit code 1
+srun: error: node03: task 3: Exited with exit code 1
+srun: error: node03: task 2: Exited with exit code 1

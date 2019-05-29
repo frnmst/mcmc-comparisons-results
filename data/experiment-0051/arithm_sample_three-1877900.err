@@ -1,0 +1,7 @@
+srun: error: node03: task 3: Exited with exit code 1
+srun: error: node03: task 0: Exited with exit code 1
+srun: error: node03: task 1: Exited with exit code 1
+slurmstepd: error: *** JOB 1877900 ON node03 CANCELLED AT 2019-05-27T03:19:13 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1877900.0 ON node03 CANCELLED AT 2019-05-27T03:19:13 DUE TO TIME LIMIT ***
+srun: error: node03: task 2: Terminated
