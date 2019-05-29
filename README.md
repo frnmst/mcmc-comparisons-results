@@ -55,6 +55,7 @@
     - [Experiment 38](#experiment-38)
     - [Experiment 39](#experiment-39)
     - [Experiment 40](#experiment-40)
+  - [In paper](#in-paper)
     - [Experiment 41](#experiment-41)
     - [Experiment 42](#experiment-42)
     - [Experiment 43](#experiment-43)
@@ -66,7 +67,6 @@
     - [Experiment 49](#experiment-49)
     - [Experiment 50](#experiment-50)
     - [Experiment 51](#experiment-51)
-    - [Experiment 52](#experiment-52)
     - [Experiment 97](#experiment-97)
     - [Experiment 98](#experiment-98)
     - [Experiment 99](#experiment-99)
@@ -924,6 +924,8 @@ Failed because of insufficient memory: `./run.sh -S -t arithm_sample_three -m 10
 
 ![data/experiment-0040/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png](data/experiment-0040/plot_prob_over_time_mh_vs_gibbs_vs_rejection_arithm_sample_three.png)
 
+## In paper
+
 ### Experiment 41
 
 Failed.
@@ -1168,21 +1170,17 @@ Failed. See the raw data [here](data/experiment-0045).
 
 ### Experiment 51
 
-1 element Failed.
-./run.sh -S -t arithm_sample_three -m 3100 -M 4200 -s 100 --partition=longrun --memory=12gb
-
-### Experiment 52
-
-./run.sh -S -t arithm_sample_three -m 3100 -M 4200 -s 100 --partition=longrun --memory=12gb
+Run 3 failed .
+`./run.sh -S -t arithm_sample_three -m 3100 -M 4200 -s 100 --partition=longrun --memory=12gb`
 
 ### Experiment 97
 
-49 + 51
+Experiments 49 and 51
 
 ### Experiment 98
 
-48 + 50
+Experiments 48 and 50
 
 ### Experiment 99
 
-44 + 45 (until 4200)
+Experiments 44 and 45 (up to 4200 samples)
